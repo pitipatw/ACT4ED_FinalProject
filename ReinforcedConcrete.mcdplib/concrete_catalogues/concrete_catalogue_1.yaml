@@ -1,0 +1,24 @@
+F:
+- Nmm
+R:
+- mm # b
+- mm # d
+- N/mm # fc'
+- mm # a 
+implementations:
+  model0: # can this be section0
+    f_max:
+    - 100 Nmm
+    r_min:
+    - 100 mm
+    - 200 mm
+    - 300 N/mm
+    - 400 mm
+  model0:
+    f_max:
+    - 150 Nmm
+    r_min:
+    - 150 mm
+    - 250 mm
+    - 350 N/mm
+    - 450 mm
