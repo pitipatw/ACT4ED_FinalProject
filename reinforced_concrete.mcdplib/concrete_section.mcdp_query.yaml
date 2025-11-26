@@ -1,0 +1,18 @@
+title: Query_1
+description: 'Query for the concrete section.'
+model: "`concrete_section"
+query:
+  query_type: FixFunMinRes
+  min_f: 
+    moment_demand: 1000 Nmm
+  max_r:
+    section_moment_capacity: 1000000 Nmm
+    compression_area: 1000000 mm2
+    compression_force: 1000000 N
+    concrete_mass: 1000000 kg
+    concrete_area: 1000000 mm2
+    concrete_strength: 50 N/mm
+
+  optimize_for:
+   - concrete_mass
+  

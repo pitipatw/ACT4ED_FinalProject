@@ -79,7 +79,7 @@ end
 Main function to convert CSV into MCDP-style YAML.
 """
 function convert_csv_to_yaml(path_to_csv::String;
-    filename::String = "test.yaml",
+    saveFilePath::String = "test.yaml",
     f_mode::String = "max",
     r_mode::String = "min"
 )
@@ -99,7 +99,7 @@ function convert_csv_to_yaml(path_to_csv::String;
 
     # Build the implementations section
     implementations = build_implementations(df, f_count, f_units, r_units;
-        f_mode=f_mode, r_mode=r_mode)
+        f_mode = f_mode, r_mode = r_mode)
 
     # Assemble YAML structure
     data = Dict(
@@ -108,7 +108,13 @@ function convert_csv_to_yaml(path_to_csv::String;
         "implementations" => implementations
     )
 
-    YAML.write_file(filename, data)
-    println("YAML successfully saved at $filename")
+    YAML.write_file(saveFilePath, data)
+    println("YAML successfully saved at $saveFilePath")
     return data
+end
+
+function build_headers(F_variables, F_units, R_variables, R_units)
+    f_headers = ["F_$(name)_$(unit)" for (name, unit) in zip(F_variables, F_units)]
+    r_headers = ["R_$(name)_$(unit)" for (name, unit) in zip(R_variables, R_units)]
+    return vcat(f_headers, r_headers)
 end
