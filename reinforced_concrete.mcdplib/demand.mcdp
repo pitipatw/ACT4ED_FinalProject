@@ -1,0 +1,10 @@
+dp {
+    provides applied_load [N/mm]
+    provides element_length [mm]
+    requires moment_demand [N*mm]
+    requires shear_demand [N]
+
+    requires moment_demand >= applied_load * element_length ^ 2 / 8
+    requires shear_demand >= applied_load * element_length / 2
+}
+
