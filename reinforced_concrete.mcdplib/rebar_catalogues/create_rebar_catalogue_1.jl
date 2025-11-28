@@ -59,7 +59,7 @@ df = DataFrame(fill(Any[], length(headers)), headers)
 # 2. Loop and populate dataframe
 # -------------------------------------------------------------------
 
-counter = 0
+global counter = 0
 
 for rebar_size in rebar_size_list
     for n_per_row in n_per_row_list 
@@ -67,7 +67,7 @@ for rebar_size in rebar_size_list
             for d in d_list
                 for comp_ratio in  compression_ratio_list
         
-                    counter += 1
+                    global counter += 1
 
                     rebar_diameter = rebarSize_to_diameter_mm[rebar_size]
                     rebar_area    = pi * rebar_diameter ^ 2 / 4
@@ -97,7 +97,7 @@ end
 # 3. Save CSV
 # -------------------------------------------------------------------
 
-pathToCsv = "ReinforcedConcrete.mcdplib/rebar_catalogues/rebar_catalogue_1.csv"
+pathToCsv = "reinforced_concrete.mcdplib/rebar_catalogues/rebar_catalogue_1.csv"
 
 CSV.write(pathToCsv, df)
 
@@ -106,5 +106,5 @@ println("Saved $pathToCsv with ", nrow(df), " rows.")
 # -------------------------------------------------------------------
 # 4. Make the .yaml file from the csv file
 # -------------------------------------------------------------------
-pathToYaml = "ReinforcedConcrete.mcdplib/rebar_catalogues/rebar_catalogue_1.yaml"
+pathToYaml = "reinforced_concrete.mcdplib/rebar_catalogues/rebar_catalogue_1.yaml"
 myMCDP.convert_csv_to_yaml(pathToCsv, saveFilePath = pathToYaml)

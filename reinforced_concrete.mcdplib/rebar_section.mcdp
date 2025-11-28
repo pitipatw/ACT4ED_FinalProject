@@ -2,12 +2,10 @@ mcdp {
     provides section_moment_capacity [Nmm]
     provides compression_area [mm2]
     provides compression_force [N]
-    provides moment_demand [Nmm]
+    provides moment_demand [N*mm]
 
     requires rebar_mass [kg]
     requires number_of_rebars_per_row [dimensionless]
-
-    provided moment_demand <= moment_capacity
 
     implemented-by yaml 
     resource("rebar_catalogues/rebar_catalogue_1.yaml")

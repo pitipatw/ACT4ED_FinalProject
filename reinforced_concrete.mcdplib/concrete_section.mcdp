@@ -1,16 +1,15 @@
-mcdp {
-    provides moment_demand [Nmm]
+dp {
+    provides moment_demand [N*mm]
 
-    requires section_moment_capacity [Nmm]
-    requires compression_area [mm2]
+    requires moment_capacity [N*mm]
+    requires concrete_strength [N/mm/mm]
+    requires b [mm]
+    requires d [mm]
+    requires compression_area [mm^2]
     requires compression_force [N]
     requires concrete_mass [kg]
-    requires concrete_area [mm2]
-    requires concrete_strength [N/mm]
+    requires concrete_area [mm^2]
 
-    provided moment_demand <= moment_capacity
-
-    implemented-by yaml 
-    resource("concrete_catalogues/concrete_catalogue_1.yaml")
+    implemented-by yaml resource("concrete_catalogues/concrete_section_catalogue_run.yaml")
 }
 

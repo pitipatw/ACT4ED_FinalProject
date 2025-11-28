@@ -15,11 +15,11 @@ d_list = d_list[:]  # flatten matrix to vector
 
 compression_ratio_list = [0.1, 0.2, 0.3, 0.4, 0.5]
 
-F_variables = ["moment_capacity"]
-F_units     = ["Nmm"]
+F_variables = ["moment_demand"]
+F_units     = ["N*mm"]
 
-R_variables = ["moment_capacitiy", "fc", "b", "d", "compression_area", "compression_force", "moment_arm"]
-R_units     = ["N/mm", "mm", "mm", "mm2", "N", "mm", "Nmm"]
+R_variables = ["moment_capacitiy", "concrete_strength", "b", "d", "compression_area", "compression_force", "moment_arm"]
+R_units     = ["N*mm", "N/mm/mm", "mm", "mm", "mm^2",  "N", "mm"]
 
 # -------------------------------------------------------------------
 # 1. Build the output dataframe with correct headers
@@ -76,7 +76,7 @@ end
 # 3. Save CSV
 # -------------------------------------------------------------------
 
-pathToCsv = "ReinforcedConcrete.mcdplib/concrete_catalogues/concrete_catalogue_1.csv"
+pathToCsv = "reinforced_concrete.mcdplib/concrete_section_catalogues/concrete_section_catalogue_1.csv"
 
 CSV.write(pathToCsv, df)
 
@@ -85,5 +85,5 @@ println("Saved $pathToCsv with ", nrow(df), " rows.")
 # -------------------------------------------------------------------
 # 4. Make the .yaml file from the csv file
 # -------------------------------------------------------------------
-pathToYaml = "ReinforcedConcrete.mcdplib/concrete_catalogues/concrete_catalogue_1.yaml"
+pathToYaml = "reinforced_concrete.mcdplib/concrete_section_catalogues/concrete_section_catalogue_1.yaml"
 myMCDP.convert_csv_to_yaml(pathToCsv, saveFilePath = pathToYaml)
