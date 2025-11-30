@@ -5,8 +5,8 @@ mcdp {
     provides total_rebar_area [mm*mm]
     provides moment_arm [mm]
     
-    requires caar
+    requires concrete_carbon [kg/mm]
 
-    implemented-by yaml resource("concrete_catalogues/concrete_section_catalogue_run.yaml")
+    implemented-by yaml resource("concrete_catalogues/concrete_section_catalogue_.yaml")
 }
 
