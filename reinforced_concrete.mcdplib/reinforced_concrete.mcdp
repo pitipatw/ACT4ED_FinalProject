@@ -1,0 +1,17 @@
+mcdp {
+    provides applied_load [N/mm]
+    provides element_length [mm]
+
+    requires carbon [kg/mm]
+
+    demand_dp = instance `demand
+    moment_dp = instance `moment
+    # concrete_section_dp = instance `concrete_section
+
+
+    provided applied_load <= applied_load provided by demand
+    provided element_length <= applied_load provided by demand
+
+    moment_demand required by demand <= moment_demand provided by moment
+}
+

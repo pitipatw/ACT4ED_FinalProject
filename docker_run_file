@@ -1,0 +1,1 @@
+docker run -it --rm -v $PWD:$PWD -w $PWD zupermind/mcdp:2025 bash

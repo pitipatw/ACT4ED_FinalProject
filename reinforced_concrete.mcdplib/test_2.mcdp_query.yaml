@@ -1,0 +1,15 @@
+title: test_2
+description: 'test query for the demand component.'
+model: "`demand"
+query:
+  query_type: FixResMaxFun
+  min_f: 
+    applied_load: 10 N/mm
+    element_length: 9 mm
+  max_r:
+    moment_demand: 100 N*mm
+    shear_demand: 25 N
+
+  optimize_for:
+  - applied_load
+  - element_length

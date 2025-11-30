@@ -1,0 +1,17 @@
+title: test_3
+description: 'test query for the moment component.'
+model: "`moment"
+query:
+  query_type: FixFunMinRes
+  min_f: 
+    moment_demand: 5000000000 N*mm
+  max_r:
+    section_width: 500 mm 
+    compression_depth: 500 mm
+    concrete_strength: 45 N/mm/mm
+    total_rebar_area: 5000 mm*mm
+    moment_arm: 500 mm
+
+  optimize_for:
+  - section_width
+  - concrete_strength

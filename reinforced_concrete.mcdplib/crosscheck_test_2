@@ -1,0 +1,25 @@
+calculated_applied_load = 10 # 1292.042740152 #297.74279087 # 1000000 # 365.174
+calculated_element_length = 10
+maximum_moment_demand = 100
+maximum_shear_demand = 25
+
+moment_demand = calculated_applied_load * calculated_element_length ^ 2 / 8
+shear_demand = calculated_applied_load * calculated_element_length / 2
+
+# based on moment
+element_length_from_moment = (maximum_moment_demand * 8 / calculated_applied_load) ^ 0.5
+shear_demand_from_moment = calculated_applied_load * element_length_from_moment / 2
+
+# based on shear
+element_length_from_shear = maximum_shear_demand * 2 / calculated_applied_load
+moment_demand_from_shear = calculated_applied_load * element_length_from_shear ^ 2 / 8
+
+println("Moment:")
+println("Element length $element_length_from_moment")
+println("Shear demand: $shear_demand_from_moment")
+
+println("Shear:")
+println("Element length $element_length_from_shear")
+println("Moment demand: $moment_demand_from_shear")
+
+

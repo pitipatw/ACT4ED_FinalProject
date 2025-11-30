@@ -1,0 +1,9 @@
+optimistic:
+  minimals: frozenset({(Decimal('1E-9'), Decimal('0.015573602')), 
+    (Decimal('0.015573468'), Decimal('0.015573468')), (Decimal('0.015573602'), 
+    Decimal('1E-9'))})
+  pretty: ↑{⟨0.015573468 mm,0.015573468 N/mm/mm⟩, ⟨0.015573602 mm,1E-9 N/mm/mm⟩,
+    ⟨1E-9 mm,0.015573602 N/mm/mm⟩}
+pessimistic:
+  minimals: frozenset()
+  pretty: ↑{}
