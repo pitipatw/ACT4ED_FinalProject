@@ -7,6 +7,8 @@ mcdp {
     demand = instance `demand
     moment = instance `moment
     concrete_section = instance `concrete_section
+    rebar_layout = instance `rebar_layout
+   
 
 
     provided applied_load <= applied_load provided by demand
@@ -19,5 +21,8 @@ mcdp {
     concrete_strength required by moment <= concrete_strength provided by concrete_section
     total_rebar_area required by moment <= total_rebar_area provided by concrete_section
     moment_arm required by moment <= moment_arm provided by concrete_section
+    
+    
+    required carbon >= concrete_carbon required by concrete_section + rebar_carbon required by rebar_layout
 }
 
