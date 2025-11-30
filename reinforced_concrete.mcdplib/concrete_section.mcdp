@@ -7,6 +7,6 @@ mcdp {
     
     requires concrete_carbon [kg/mm]
 
-    implemented-by yaml resource("concrete_catalogues/concrete_section_catalogue_.yaml")
+    implemented-by yaml resource("concrete_section_catalogues/concrete_section_catalogue_01.yaml")
 }
 
