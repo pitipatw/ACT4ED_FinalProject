@@ -1,0 +1,10 @@
+mcdp {
+    provide moment_demand [N*mm]
+    provides section_width [mm]
+    provides moment_arm [mm]
+    
+    requires rebar_carbon [kg/mm]
+
+    implemented-by yaml resource("rebar_layout_catalogues/rebar_layout_catalogue_1.yaml")
+}
+
