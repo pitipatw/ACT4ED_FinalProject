@@ -4,13 +4,13 @@ mcdp {
 
     requires carbon [kg/mm]
 
-    demand_dp = instance `demand
-    moment_dp = instance `moment
+    demand = instance `demand
+    moment = instance `moment
     # concrete_section_dp = instance `concrete_section
 
 
     provided applied_load <= applied_load provided by demand
-    provided element_length <= applied_load provided by demand
+    provided element_length <= element_length provided by demand
 
     moment_demand required by demand <= moment_demand provided by moment
 }
