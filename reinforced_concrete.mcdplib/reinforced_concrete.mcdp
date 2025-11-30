@@ -14,6 +14,10 @@ mcdp {
 
     moment_demand required by demand <= moment_demand provided by moment
 
-    moment_demand required by moment <= moment_demand provided by concrete_section
+    section_width required by moment <= requires section_width required by concrete_section
+    compression_depth required by moment <= requires compression_depth required by concrete_section
+    concrete_strength required by moment <= requires concrete_strength required by concrete_section
+    total_rebar_area required by moment <=requires total_rebar_area required by concrete_section
+    moment_arm required by moment <= requires moment_arm required by concrete_section
 }
 
