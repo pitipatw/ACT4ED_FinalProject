@@ -1,4 +1,4 @@
-dp {
+mcdp {
     provides moment_demand [N*mm]
 
     requires moment_capacity [N*mm]

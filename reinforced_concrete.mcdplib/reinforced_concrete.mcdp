@@ -6,12 +6,14 @@ mcdp {
 
     demand = instance `demand
     moment = instance `moment
-    # concrete_section_dp = instance `concrete_section
+    concrete_section = instance `concrete_section
 
 
     provided applied_load <= applied_load provided by demand
     provided element_length <= element_length provided by demand
 
     moment_demand required by demand <= moment_demand provided by moment
+
+    moment_demand required by moment <= moment_demand provided by concrete_section
 }
 
