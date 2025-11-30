@@ -22,6 +22,7 @@ mcdp {
     total_rebar_area required by moment <= total_rebar_area provided by concrete_section
     moment_arm required by moment <= moment_arm provided by concrete_section
     
+    moment_demand required by demand <= moment_
     moment_arm required by moment <= moment_arm provided by rebar_layout
     
     

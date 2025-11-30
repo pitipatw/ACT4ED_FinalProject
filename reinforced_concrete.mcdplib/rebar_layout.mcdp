@@ -1,5 +1,5 @@
 mcdp {
-    provide moment_demand [N*mm]
+    provides moment_demand [N*mm]
     provides section_width [mm]
     provides moment_arm [mm]
     
