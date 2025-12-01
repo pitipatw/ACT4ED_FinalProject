@@ -21,6 +21,7 @@ mcdp {
     
     # section_width required by moment <= section_width provided by rebar_layout 
     moment_demand required by demand <= moment_demand provided by rebar_layout
+    rebar_total_area required by demand <= rebar_total_area prov
     moment_arm required by moment <= moment_arm provided by rebar_layout
     
     required carbon >= concrete_carbon required by concrete_section + rebar_carbon required by rebar_layout
