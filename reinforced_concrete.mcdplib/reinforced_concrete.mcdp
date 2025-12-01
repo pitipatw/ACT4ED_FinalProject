@@ -13,6 +13,7 @@ mcdp {
     provided element_length <= element_length provided by demand
 
     moment_demand required by demand <= moment_demand provided by moment
+    # shear_demand required by demand <= shear_demand provided by shear
 
     section_width required by moment <= section_width provided by concrete_section
     compression_depth required by moment <= compression_depth provided by concrete_section
@@ -20,7 +21,7 @@ mcdp {
     moment_arm required by moment <= moment_arm provided by concrete_section
     
     # section_width required by moment <= section_width provided by rebar_layout 
-    moment_demand required by demand <= moment_demand provided by rebar_layout
+    # moment_demand required by demand <= moment_demand provided by rebar_layout
     total_rebar_area required by moment <= total_rebar_area provided by rebar_layout
     moment_arm required by moment <= moment_arm provided by rebar_layout
     

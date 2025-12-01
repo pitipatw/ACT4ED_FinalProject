@@ -38,8 +38,8 @@ section_ratio_list = [1, 1.5, 2.0]
 comp_depth_ratio_list = [0.1, 0.2, 0.3, 0.4, 0.5]
 
 # to calculate this, I will need to get compression depth from the previous components, do
-F_variables = ["moment_demand", "total_rebar_area", "moment_arm"]
-F_units     = ["N*mm", "mm*mm", "mm"]
+F_variables = ["total_rebar_area", "moment_arm"]
+F_units     = ["mm*mm", "mm"]
 
 R_variables = ["rebar_carbon"]
 R_units     = ["kg/mm"]
@@ -80,7 +80,7 @@ for section_width in section_width_list
                     moment_demand = total_rebar_area * 420 * moment_arm
                     # Append row
                     push!(df, (
-                        moment_demand, 
+                        # moment_demand, 
                         total_rebar_area,
                         moment_arm,
                         rebar_carbon

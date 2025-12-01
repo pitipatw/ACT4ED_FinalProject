@@ -1,0 +1,49 @@
+
+using CSV, DataFrames
+
+concrete_section_catalog = CSV.read("reinforced_concrete.mcdplib/concrete_section_catalogues/concrete_section_catalogue_1.csv", DataFrame)
+concrete_section_catalog_full = CSV.read("reinforced_concrete.mcdplib/concrete_section_catalogues/concrete_section_catalogue_1_full.csv", DataFrame)
+
+rebar_layout_catalog = CSV.read("reinforced_concrete.mcdplib/rebar_layout_catalogues/rebar_layout_catalogue_1.csv", DataFrame)
+
+applied_load = 20 # N/mm
+element_length = 6000 # mm
+max_carbon = 10000 # kg/mm
+
+# retreive design
+
+concrete_section_id = 123
+rebar_layout_id = 2425
+
+concrete_section = concrete_section_catalog[concrete_section_id + 1, :]
+concrete_section_full = concrete_section_catalog_full[concrete_section_id + 1, :]
+rebar_layout = rebar_layout_catalog[rebar_layout_id + 1, :]
+
+fc′ = concrete_section_full["F_concrete_strength_N/mm/mm"]
+b = concrete_section_full["F_section_width_mm"]
+a = concrete_section_full["F_compression_depth_mm"]
+d = concrete_section_full["F_section_depth_mm"]
+moment_arm = concrete_section_full["F_moment_arm_mm"]
+
+As = rebar_layout["F_total_rebar_area_mm*mm"]
+moment_arm = rebar_layout["F_moment_arm_mm"]
+fy = 420
+
+# main check starts here
+moment_demand = applied_load * element_length^2 / 8
+
+moment_arm_recalc = d - a / 2
+moment_arm == moment_arm_recalc ? "Moment arm verification passes" : "Moment arm verification fails"
+moment_capacity_concrete = 0.85 * fc′ * b * a * moment_arm
+moment_capacity_rebar = As * fy * moment_arm
+
+# check equilibrium
+0.85 * fc′ * b * a
+As * fy
+a_calc = As * fy / (0.85 * fc′ * b)
+moment_arm = d - a_calc / 2
+
+moment_capacity_concrete = 0.85 * fc′ * b * a_calc * (d - a_calc / 2)
+moment_capacity_rebar = As * fy * (d - a_calc / 2)
+
+moment_capacity_concrete / moment_demand

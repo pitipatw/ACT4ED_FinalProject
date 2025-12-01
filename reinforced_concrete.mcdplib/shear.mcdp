@@ -1,0 +1,22 @@
+mcdp {
+    provides shear_demand [N]
+    provides concrete_strength [N]
+
+    requires stirrup_area [mm*mm]
+    requires spacing [mm]
+    
+    requires section_width [mm]
+    requires compression_depth [mm]
+    requires concrete_strength [N/mm/mm]
+    requires total_rebar_area [mm*mm]
+    requires moment_arm [mm]
+
+    fyt = 420 [N/mm/mm]
+
+    Vc = 0.17 * concrete_strength^0.5 * section_width * section_depth
+    Vs = stirrup_area * fyt * section_depth / spacing
+    
+    provided moment_demand <= 0.85 * required concrete_strength * required section_width * required compression_depth * required moment_arm
+    provided moment_demand <= required total_rebar_area * fy * required moment_arm
+}
+
