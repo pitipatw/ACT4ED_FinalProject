@@ -2,7 +2,6 @@ mcdp {
     provides section_width [mm]
     provides compression_depth [mm]
     provides concrete_strength [N/mm/mm]
-    provides total_rebar_area [mm*mm]
     provides moment_arm [mm]
     
     requires concrete_carbon [kg/mm]

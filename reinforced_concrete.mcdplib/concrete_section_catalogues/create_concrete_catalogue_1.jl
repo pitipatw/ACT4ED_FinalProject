@@ -6,20 +6,19 @@ using DataFrames
 include("../../src/myMCDP.jl")
 
 # variables to populate
-fc′_list = [28, 35, 45]
-b_list = [150, 175, 200, 225, 250]
-ratio_list = [1, 1.5, 2.0]
+section_width_list = [100, 150, 200, 250]
 
-d_list = b_list * ratio_list'
-d_list = d_list[:]  # flatten matrix to vector
+section_ratio_list = [1, 1.5, 2.0]
 
-compression_ratio_list = [0.1, 0.2, 0.3, 0.4, 0.5]
+comp_depth_ratio_list = [0.1, 0.2, 0.3, 0.4, 0.5]
 
-F_variables = ["moment_demand"]
-F_units     = ["N*mm"]
+concrete_strength_list = [28, 35, 45]
 
-R_variables = ["moment_capacitiy", "concrete_strength", "b", "d", "compression_area", "compression_force", "moment_arm"]
-R_units     = ["N*mm", "N/mm/mm", "mm", "mm", "mm^2",  "N", "mm"]
+F_variables = ["section_width", "compression_depth", "concrete_strength", "moment_arm"]
+F_units     = ["mm", "mm", "N/mm/mm", "mm"]
+
+R_variables = ["concrete_carbon"]
+R_units     = ["kg/mm"]
 
 # -------------------------------------------------------------------
 # 1. Build the output dataframe with correct headers
@@ -40,32 +39,28 @@ df = DataFrame(fill(Any[], length(headers)), headers)
 
 global counter = 0
 
-for fc′ in fc′_list
-    for b in b_list
-        for d in d_list
-            for comp_ratio in compression_ratio_list
+for section_width in section_width_list
+    for section_ratio in section_ratio_list
+        for comp_depth_ratio in comp_depth_ratio_list
+            for concrete_strength in concrete_strength_list
 
                 global counter += 1
 
-                # Compute compression area
-                compression_area = b * d * comp_ratio
-                compression_force = 0.85 * fc′ * compression_area
+                section_depth = section_width * section_ratio
+                compression_depth = comp_depth_ratio * section_depth
 
-                # Compute moment capacity 
-                moment_capacity = 0.85 * fc′ * compression_area * (d - d * comp_ratio / 2)
+                moment_arm = (section_depth - compression_depth / 2)
 
-                moment_arm = (d - d * comp_ratio / 2)
-
+                concrete_carbon = section_width * section_depth * concrete_strength
+                concrete_carbon /= 10e6
+                
                 # Append row
                 push!(df, (
-                    moment_capacity,
-                    moment_capacity,
-                    fc′,
-                    b,
-                    d,
-                    compression_area,
-                    compression_force,
-                    moment_arm
+                    section_width,
+                    compression_depth,
+                    concrete_strength,
+                    moment_arm,
+                    concrete_carbon
                 ))
             end
         end

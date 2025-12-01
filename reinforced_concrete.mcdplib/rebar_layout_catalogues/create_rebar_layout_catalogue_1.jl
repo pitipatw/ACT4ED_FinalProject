@@ -32,20 +32,17 @@ rebarSize_to_kg_per_m = Dict(k => pi * (rebarSize_to_diameter_mm[k] / 1000) ^ 2 
 rebar_size_list = [3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 18]
 n_per_row_list = [1, 2, 3, 4]
 
-b_list = [150, 175, 200, 225, 250]
-ratio_list = [1, 1.5, 2.0]
-
-d_list = b_list * ratio_list'
-d_list = d_list[:]  # flatten matrix to vector
-
-compression_ratio_list = [0.1, 0.2, 0.3, 0.4, 0.5]
+# These are similar to concrete_section
+section_width_list = [100, 150, 200, 250]
+section_ratio_list = [1, 1.5, 2.0]
+comp_depth_ratio_list = [0.1, 0.2, 0.3, 0.4, 0.5]
 
 # to calculate this, I will need to get compression depth from the previous components, do
-F_variables = ["moment_capacity", "compression_area", "compression_force", "moment_demand"]
-F_units     = ["Nmm", "mm2", "N", "Nmm"]
+F_variables = ["moment_demand", "section_width", "moment_arm"]
+F_units     = ["N*mm", "mm", "mm"]
 
-R_variables = ["mass", "number_per_row"]
-R_units     = ["kg", "dimensionless"]
+R_variables = ["rebar_carbon"]
+R_units     = ["kg/mm"]
 
 # -------------------------------------------------------------------
 # 1. Build the output dataframe with correct headers
@@ -61,31 +58,32 @@ df = DataFrame(fill(Any[], length(headers)), headers)
 
 global counter = 0
 
-for rebar_size in rebar_size_list
-    for n_per_row in n_per_row_list 
-        for b in b_list
-            for d in d_list
-                for comp_ratio in  compression_ratio_list
-        
+for section_width in section_width_list
+    for section_ratio in section_ratio_list
+        for comp_depth_ratio in comp_depth_ratio_list
+            for n_per_row in n_per_row_list
+                for rebar_size in rebar_size_list
+
                     global counter += 1
 
                     rebar_diameter = rebarSize_to_diameter_mm[rebar_size]
                     rebar_area    = pi * rebar_diameter ^ 2 / 4
                     total_rebar_area = n_per_row * rebar_area
 
-                    compression_force = fy * total_rebar_area
-                    compression_area = b * d * comp_ratio
-                    moment_arm  = (d - d * comp_ratio / 2)
-
-                    moment_capacity = fy * total_rebar_area * (d - d * comp_ratio / 2)
-
-                    
                     rebar_total_weight = n_per_row * rebarSize_to_kg_per_m[rebar_size]
+                    rebar_carbon = 40 * rebar_total_weight
+
+                    section_depth = section_width * section_ratio
+                    compression_depth = comp_depth_ratio * section_depth
+
+                    moment_arm = (section_depth - compression_depth / 2)
 
                     # Append row
                     push!(df, (
-                        moment_capacity, compression_area, compression_force, moment_capacity,
-                        rebar_total_weight, n_per_row
+                        moment_demand, 
+                        section_width,
+                        moment_arm,
+                        rebar_carbon
                     ))
                 end
             end
