@@ -77,7 +77,7 @@ for section_width in section_width_list
                     compression_depth = comp_depth_ratio * section_depth
 
                     moment_arm = (section_depth - compression_depth / 2)
-
+                    moment_demand = total_rebar_area * 420 * moment_arm
                     # Append row
                     push!(df, (
                         moment_demand, 

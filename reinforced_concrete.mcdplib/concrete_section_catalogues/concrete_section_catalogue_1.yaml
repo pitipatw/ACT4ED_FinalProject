@@ -1,1448 +1,1448 @@
+F:
+- mm
+- mm
+- N/mm/mm
+- mm
+R:
+- kg/mm
 implementations:
-  model26:
-    f_max:
-      - "100 mm"
-      - "60.0 mm"
-      - "45 N/mm/mm"
-      - "120.0 mm"
-    r_min:
-      - "0.0675 kg/mm"
-  model65:
-    f_max:
-      - "150 mm"
-      - "45.0 mm"
-      - "45 N/mm/mm"
-      - "202.5 mm"
-    r_min:
-      - "0.151875 kg/mm"
-  model45:
-    f_max:
-      - "150 mm"
-      - "15.0 mm"
-      - "28 N/mm/mm"
-      - "142.5 mm"
-    r_min:
-      - "0.063 kg/mm"
-  model93:
-    f_max:
-      - "200 mm"
-      - "40.0 mm"
-      - "28 N/mm/mm"
-      - "180.0 mm"
-    r_min:
-      - "0.112 kg/mm"
-  model142:
-    f_max:
-      - "250 mm"
-      - "75.0 mm"
-      - "35 N/mm/mm"
-      - "212.5 mm"
-    r_min:
-      - "0.21875 kg/mm"
-  model55:
-    f_max:
-      - "150 mm"
-      - "60.0 mm"
-      - "35 N/mm/mm"
-      - "120.0 mm"
-    r_min:
-      - "0.07875 kg/mm"
-  model159:
-    f_max:
-      - "250 mm"
-      - "150.0 mm"
-      - "28 N/mm/mm"
-      - "300.0 mm"
-    r_min:
-      - "0.2625 kg/mm"
-  model82:
-    f_max:
-      - "150 mm"
-      - "90.0 mm"
-      - "35 N/mm/mm"
-      - "255.0 mm"
-    r_min:
-      - "0.1575 kg/mm"
-  model135:
-    f_max:
-      - "250 mm"
-      - "25.0 mm"
-      - "28 N/mm/mm"
-      - "237.5 mm"
-    r_min:
-      - "0.175 kg/mm"
-  model162:
-    f_max:
-      - "250 mm"
-      - "187.5 mm"
-      - "28 N/mm/mm"
-      - "281.25 mm"
-    r_min:
-      - "0.2625 kg/mm"
   model0:
     f_max:
-      - "100 mm"
-      - "10.0 mm"
-      - "28 N/mm/mm"
-      - "95.0 mm"
+    - 100 mm
+    - 10.0 mm
+    - 28 N/mm/mm
+    - 95.0 mm
     r_min:
-      - "0.028 kg/mm"
+    - 0.028 kg/mm
   model1:
     f_max:
-      - "100 mm"
-      - "10.0 mm"
-      - "35 N/mm/mm"
-      - "95.0 mm"
-    r_min:
-      - "0.035 kg/mm"
-  model11:
-    f_max:
-      - "100 mm"
-      - "40.0 mm"
-      - "45 N/mm/mm"
-      - "80.0 mm"
-    r_min:
-      - "0.045 kg/mm"
-  model12:
-    f_max:
-      - "100 mm"
-      - "50.0 mm"
-      - "28 N/mm/mm"
-      - "75.0 mm"
-    r_min:
-      - "0.028 kg/mm"
-  model123:
-    f_max:
-      - "200 mm"
-      - "80.0 mm"
-      - "28 N/mm/mm"
-      - "360.0 mm"
-    r_min:
-      - "0.224 kg/mm"
-  model70:
-    f_max:
-      - "150 mm"
-      - "90.0 mm"
-      - "35 N/mm/mm"
-      - "180.0 mm"
-    r_min:
-      - "0.118125 kg/mm"
-  model167:
-    f_max:
-      - "250 mm"
-      - "50.0 mm"
-      - "45 N/mm/mm"
-      - "475.0 mm"
-    r_min:
-      - "0.5625 kg/mm"
-  model13:
-    f_max:
-      - "100 mm"
-      - "50.0 mm"
-      - "35 N/mm/mm"
-      - "75.0 mm"
-    r_min:
-      - "0.035 kg/mm"
-  model155:
-    f_max:
-      - "250 mm"
-      - "75.0 mm"
-      - "45 N/mm/mm"
-      - "337.5 mm"
-    r_min:
-      - "0.421875 kg/mm"
-  model39:
-    f_max:
-      - "100 mm"
-      - "80.0 mm"
-      - "28 N/mm/mm"
-      - "160.0 mm"
-    r_min:
-      - "0.056 kg/mm"
-  model67:
-    f_max:
-      - "150 mm"
-      - "67.5 mm"
-      - "35 N/mm/mm"
-      - "191.25 mm"
-    r_min:
-      - "0.118125 kg/mm"
-  model4:
-    f_max:
-      - "100 mm"
-      - "20.0 mm"
-      - "35 N/mm/mm"
-      - "90.0 mm"
-    r_min:
-      - "0.035 kg/mm"
-  model153:
-    f_max:
-      - "250 mm"
-      - "75.0 mm"
-      - "28 N/mm/mm"
-      - "337.5 mm"
-    r_min:
-      - "0.2625 kg/mm"
-  model37:
-    f_max:
-      - "100 mm"
-      - "60.0 mm"
-      - "35 N/mm/mm"
-      - "170.0 mm"
-    r_min:
-      - "0.07 kg/mm"
-  model138:
-    f_max:
-      - "250 mm"
-      - "50.0 mm"
-      - "28 N/mm/mm"
-      - "225.0 mm"
-    r_min:
-      - "0.175 kg/mm"
-  model175:
-    f_max:
-      - "250 mm"
-      - "200.0 mm"
-      - "35 N/mm/mm"
-      - "400.0 mm"
-    r_min:
-      - "0.4375 kg/mm"
-  model23:
-    f_max:
-      - "100 mm"
-      - "45.0 mm"
-      - "45 N/mm/mm"
-      - "127.5 mm"
-    r_min:
-      - "0.0675 kg/mm"
-  model144:
-    f_max:
-      - "250 mm"
-      - "100.0 mm"
-      - "28 N/mm/mm"
-      - "200.0 mm"
-    r_min:
-      - "0.175 kg/mm"
-  model87:
-    f_max:
-      - "150 mm"
-      - "150.0 mm"
-      - "28 N/mm/mm"
-      - "225.0 mm"
-    r_min:
-      - "0.126 kg/mm"
-  model99:
-    f_max:
-      - "200 mm"
-      - "80.0 mm"
-      - "28 N/mm/mm"
-      - "160.0 mm"
-    r_min:
-      - "0.112 kg/mm"
-  model40:
-    f_max:
-      - "100 mm"
-      - "80.0 mm"
-      - "35 N/mm/mm"
-      - "160.0 mm"
-    r_min:
-      - "0.07 kg/mm"
-  model108:
-    f_max:
-      - "200 mm"
-      - "60.0 mm"
-      - "28 N/mm/mm"
-      - "270.0 mm"
-    r_min:
-      - "0.168 kg/mm"
-  model41:
-    f_max:
-      - "100 mm"
-      - "80.0 mm"
-      - "45 N/mm/mm"
-      - "160.0 mm"
-    r_min:
-      - "0.09 kg/mm"
-  model19:
-    f_max:
-      - "100 mm"
-      - "30.0 mm"
-      - "35 N/mm/mm"
-      - "135.0 mm"
-    r_min:
-      - "0.0525 kg/mm"
-  model83:
-    f_max:
-      - "150 mm"
-      - "90.0 mm"
-      - "45 N/mm/mm"
-      - "255.0 mm"
-    r_min:
-      - "0.2025 kg/mm"
-  model146:
-    f_max:
-      - "250 mm"
-      - "100.0 mm"
-      - "45 N/mm/mm"
-      - "200.0 mm"
-    r_min:
-      - "0.28125 kg/mm"
-  model127:
-    f_max:
-      - "200 mm"
-      - "120.0 mm"
-      - "35 N/mm/mm"
-      - "340.0 mm"
-    r_min:
-      - "0.28 kg/mm"
-  model64:
-    f_max:
-      - "150 mm"
-      - "45.0 mm"
-      - "35 N/mm/mm"
-      - "202.5 mm"
-    r_min:
-      - "0.118125 kg/mm"
-  model115:
-    f_max:
-      - "200 mm"
-      - "120.0 mm"
-      - "35 N/mm/mm"
-      - "240.0 mm"
-    r_min:
-      - "0.21 kg/mm"
-  model46:
-    f_max:
-      - "150 mm"
-      - "15.0 mm"
-      - "35 N/mm/mm"
-      - "142.5 mm"
-    r_min:
-      - "0.07875 kg/mm"
-  model149:
-    f_max:
-      - "250 mm"
-      - "125.0 mm"
-      - "45 N/mm/mm"
-      - "187.5 mm"
-    r_min:
-      - "0.28125 kg/mm"
-  model124:
-    f_max:
-      - "200 mm"
-      - "80.0 mm"
-      - "35 N/mm/mm"
-      - "360.0 mm"
-    r_min:
-      - "0.28 kg/mm"
-  model62:
-    f_max:
-      - "150 mm"
-      - "22.5 mm"
-      - "45 N/mm/mm"
-      - "213.75 mm"
-    r_min:
-      - "0.151875 kg/mm"
-  model84:
-    f_max:
-      - "150 mm"
-      - "120.0 mm"
-      - "28 N/mm/mm"
-      - "240.0 mm"
-    r_min:
-      - "0.126 kg/mm"
-  model20:
-    f_max:
-      - "100 mm"
-      - "30.0 mm"
-      - "45 N/mm/mm"
-      - "135.0 mm"
-    r_min:
-      - "0.0675 kg/mm"
-  model17:
-    f_max:
-      - "100 mm"
-      - "15.0 mm"
-      - "45 N/mm/mm"
-      - "142.5 mm"
-    r_min:
-      - "0.0675 kg/mm"
-  model103:
-    f_max:
-      - "200 mm"
-      - "100.0 mm"
-      - "35 N/mm/mm"
-      - "150.0 mm"
-    r_min:
-      - "0.14 kg/mm"
-  model131:
-    f_max:
-      - "200 mm"
-      - "160.0 mm"
-      - "45 N/mm/mm"
-      - "320.0 mm"
-    r_min:
-      - "0.36 kg/mm"
-  model168:
-    f_max:
-      - "250 mm"
-      - "100.0 mm"
-      - "28 N/mm/mm"
-      - "450.0 mm"
-    r_min:
-      - "0.35 kg/mm"
-  model78:
-    f_max:
-      - "150 mm"
-      - "60.0 mm"
-      - "28 N/mm/mm"
-      - "270.0 mm"
-    r_min:
-      - "0.126 kg/mm"
-  model75:
-    f_max:
-      - "150 mm"
-      - "30.0 mm"
-      - "28 N/mm/mm"
-      - "285.0 mm"
-    r_min:
-      - "0.126 kg/mm"
-  model50:
-    f_max:
-      - "150 mm"
-      - "30.0 mm"
-      - "45 N/mm/mm"
-      - "135.0 mm"
-    r_min:
-      - "0.10125 kg/mm"
-  model113:
-    f_max:
-      - "200 mm"
-      - "90.0 mm"
-      - "45 N/mm/mm"
-      - "255.0 mm"
-    r_min:
-      - "0.27 kg/mm"
-  model61:
-    f_max:
-      - "150 mm"
-      - "22.5 mm"
-      - "35 N/mm/mm"
-      - "213.75 mm"
-    r_min:
-      - "0.118125 kg/mm"
-  model79:
-    f_max:
-      - "150 mm"
-      - "60.0 mm"
-      - "35 N/mm/mm"
-      - "270.0 mm"
-    r_min:
-      - "0.1575 kg/mm"
-  model126:
-    f_max:
-      - "200 mm"
-      - "120.0 mm"
-      - "28 N/mm/mm"
-      - "340.0 mm"
-    r_min:
-      - "0.224 kg/mm"
-  model86:
-    f_max:
-      - "150 mm"
-      - "120.0 mm"
-      - "45 N/mm/mm"
-      - "240.0 mm"
-    r_min:
-      - "0.2025 kg/mm"
-  model60:
-    f_max:
-      - "150 mm"
-      - "22.5 mm"
-      - "28 N/mm/mm"
-      - "213.75 mm"
-    r_min:
-      - "0.0945 kg/mm"
-  model140:
-    f_max:
-      - "250 mm"
-      - "50.0 mm"
-      - "45 N/mm/mm"
-      - "225.0 mm"
-    r_min:
-      - "0.28125 kg/mm"
-  model156:
-    f_max:
-      - "250 mm"
-      - "112.5 mm"
-      - "28 N/mm/mm"
-      - "318.75 mm"
-    r_min:
-      - "0.2625 kg/mm"
-  model57:
-    f_max:
-      - "150 mm"
-      - "75.0 mm"
-      - "28 N/mm/mm"
-      - "112.5 mm"
-    r_min:
-      - "0.063 kg/mm"
-  model5:
-    f_max:
-      - "100 mm"
-      - "20.0 mm"
-      - "45 N/mm/mm"
-      - "90.0 mm"
-    r_min:
-      - "0.045 kg/mm"
-  model77:
-    f_max:
-      - "150 mm"
-      - "30.0 mm"
-      - "45 N/mm/mm"
-      - "285.0 mm"
-    r_min:
-      - "0.2025 kg/mm"
-  model147:
-    f_max:
-      - "250 mm"
-      - "125.0 mm"
-      - "28 N/mm/mm"
-      - "187.5 mm"
-    r_min:
-      - "0.175 kg/mm"
-  model90:
-    f_max:
-      - "200 mm"
-      - "20.0 mm"
-      - "28 N/mm/mm"
-      - "190.0 mm"
-    r_min:
-      - "0.112 kg/mm"
-  model133:
-    f_max:
-      - "200 mm"
-      - "200.0 mm"
-      - "35 N/mm/mm"
-      - "300.0 mm"
-    r_min:
-      - "0.28 kg/mm"
-  model24:
-    f_max:
-      - "100 mm"
-      - "60.0 mm"
-      - "28 N/mm/mm"
-      - "120.0 mm"
-    r_min:
-      - "0.042 kg/mm"
-  model22:
-    f_max:
-      - "100 mm"
-      - "45.0 mm"
-      - "35 N/mm/mm"
-      - "127.5 mm"
-    r_min:
-      - "0.0525 kg/mm"
-  model76:
-    f_max:
-      - "150 mm"
-      - "30.0 mm"
-      - "35 N/mm/mm"
-      - "285.0 mm"
-    r_min:
-      - "0.1575 kg/mm"
-  model179:
-    f_max:
-      - "250 mm"
-      - "250.0 mm"
-      - "45 N/mm/mm"
-      - "375.0 mm"
-    r_min:
-      - "0.5625 kg/mm"
-  model116:
-    f_max:
-      - "200 mm"
-      - "120.0 mm"
-      - "45 N/mm/mm"
-      - "240.0 mm"
-    r_min:
-      - "0.27 kg/mm"
-  model150:
-    f_max:
-      - "250 mm"
-      - "37.5 mm"
-      - "28 N/mm/mm"
-      - "356.25 mm"
-    r_min:
-      - "0.2625 kg/mm"
-  model148:
-    f_max:
-      - "250 mm"
-      - "125.0 mm"
-      - "35 N/mm/mm"
-      - "187.5 mm"
-    r_min:
-      - "0.21875 kg/mm"
-  model96:
-    f_max:
-      - "200 mm"
-      - "60.0 mm"
-      - "28 N/mm/mm"
-      - "170.0 mm"
-    r_min:
-      - "0.112 kg/mm"
-  model136:
-    f_max:
-      - "250 mm"
-      - "25.0 mm"
-      - "35 N/mm/mm"
-      - "237.5 mm"
-    r_min:
-      - "0.21875 kg/mm"
-  model98:
-    f_max:
-      - "200 mm"
-      - "60.0 mm"
-      - "45 N/mm/mm"
-      - "170.0 mm"
-    r_min:
-      - "0.18 kg/mm"
-  model154:
-    f_max:
-      - "250 mm"
-      - "75.0 mm"
-      - "35 N/mm/mm"
-      - "337.5 mm"
-    r_min:
-      - "0.328125 kg/mm"
-  model6:
-    f_max:
-      - "100 mm"
-      - "30.0 mm"
-      - "28 N/mm/mm"
-      - "85.0 mm"
-    r_min:
-      - "0.028 kg/mm"
-  model14:
-    f_max:
-      - "100 mm"
-      - "50.0 mm"
-      - "45 N/mm/mm"
-      - "75.0 mm"
-    r_min:
-      - "0.045 kg/mm"
-  model122:
-    f_max:
-      - "200 mm"
-      - "40.0 mm"
-      - "45 N/mm/mm"
-      - "380.0 mm"
-    r_min:
-      - "0.36 kg/mm"
-  model74:
-    f_max:
-      - "150 mm"
-      - "112.5 mm"
-      - "45 N/mm/mm"
-      - "168.75 mm"
-    r_min:
-      - "0.151875 kg/mm"
-  model42:
-    f_max:
-      - "100 mm"
-      - "100.0 mm"
-      - "28 N/mm/mm"
-      - "150.0 mm"
-    r_min:
-      - "0.056 kg/mm"
-  model143:
-    f_max:
-      - "250 mm"
-      - "75.0 mm"
-      - "45 N/mm/mm"
-      - "212.5 mm"
-    r_min:
-      - "0.28125 kg/mm"
-  model21:
-    f_max:
-      - "100 mm"
-      - "45.0 mm"
-      - "28 N/mm/mm"
-      - "127.5 mm"
-    r_min:
-      - "0.042 kg/mm"
-  model139:
-    f_max:
-      - "250 mm"
-      - "50.0 mm"
-      - "35 N/mm/mm"
-      - "225.0 mm"
-    r_min:
-      - "0.21875 kg/mm"
-  model152:
-    f_max:
-      - "250 mm"
-      - "37.5 mm"
-      - "45 N/mm/mm"
-      - "356.25 mm"
-    r_min:
-      - "0.421875 kg/mm"
-  model49:
-    f_max:
-      - "150 mm"
-      - "30.0 mm"
-      - "35 N/mm/mm"
-      - "135.0 mm"
-    r_min:
-      - "0.07875 kg/mm"
-  model88:
-    f_max:
-      - "150 mm"
-      - "150.0 mm"
-      - "35 N/mm/mm"
-      - "225.0 mm"
-    r_min:
-      - "0.1575 kg/mm"
-  model95:
-    f_max:
-      - "200 mm"
-      - "40.0 mm"
-      - "45 N/mm/mm"
-      - "180.0 mm"
-    r_min:
-      - "0.18 kg/mm"
-  model120:
-    f_max:
-      - "200 mm"
-      - "40.0 mm"
-      - "28 N/mm/mm"
-      - "380.0 mm"
-    r_min:
-      - "0.224 kg/mm"
-  model176:
-    f_max:
-      - "250 mm"
-      - "200.0 mm"
-      - "45 N/mm/mm"
-      - "400.0 mm"
-    r_min:
-      - "0.5625 kg/mm"
-  model52:
-    f_max:
-      - "150 mm"
-      - "45.0 mm"
-      - "35 N/mm/mm"
-      - "127.5 mm"
-    r_min:
-      - "0.07875 kg/mm"
-  model101:
-    f_max:
-      - "200 mm"
-      - "80.0 mm"
-      - "45 N/mm/mm"
-      - "160.0 mm"
-    r_min:
-      - "0.18 kg/mm"
-  model174:
-    f_max:
-      - "250 mm"
-      - "200.0 mm"
-      - "28 N/mm/mm"
-      - "400.0 mm"
-    r_min:
-      - "0.35 kg/mm"
-  model105:
-    f_max:
-      - "200 mm"
-      - "30.0 mm"
-      - "28 N/mm/mm"
-      - "285.0 mm"
-    r_min:
-      - "0.168 kg/mm"
-  model157:
-    f_max:
-      - "250 mm"
-      - "112.5 mm"
-      - "35 N/mm/mm"
-      - "318.75 mm"
-    r_min:
-      - "0.328125 kg/mm"
+    - 100 mm
+    - 10.0 mm
+    - 35 N/mm/mm
+    - 95.0 mm
+    r_min:
+    - 0.035 kg/mm
   model10:
     f_max:
-      - "100 mm"
-      - "40.0 mm"
-      - "35 N/mm/mm"
-      - "80.0 mm"
-    r_min:
-      - "0.035 kg/mm"
-  model72:
-    f_max:
-      - "150 mm"
-      - "112.5 mm"
-      - "28 N/mm/mm"
-      - "168.75 mm"
-    r_min:
-      - "0.0945 kg/mm"
-  model171:
-    f_max:
-      - "250 mm"
-      - "150.0 mm"
-      - "28 N/mm/mm"
-      - "425.0 mm"
-    r_min:
-      - "0.35 kg/mm"
-  model16:
-    f_max:
-      - "100 mm"
-      - "15.0 mm"
-      - "35 N/mm/mm"
-      - "142.5 mm"
-    r_min:
-      - "0.0525 kg/mm"
-  model38:
-    f_max:
-      - "100 mm"
-      - "60.0 mm"
-      - "45 N/mm/mm"
-      - "170.0 mm"
-    r_min:
-      - "0.09 kg/mm"
-  model91:
-    f_max:
-      - "200 mm"
-      - "20.0 mm"
-      - "35 N/mm/mm"
-      - "190.0 mm"
-    r_min:
-      - "0.14 kg/mm"
-  model137:
-    f_max:
-      - "250 mm"
-      - "25.0 mm"
-      - "45 N/mm/mm"
-      - "237.5 mm"
-    r_min:
-      - "0.28125 kg/mm"
-  model44:
-    f_max:
-      - "100 mm"
-      - "100.0 mm"
-      - "45 N/mm/mm"
-      - "150.0 mm"
-    r_min:
-      - "0.09 kg/mm"
-  model166:
-    f_max:
-      - "250 mm"
-      - "50.0 mm"
-      - "35 N/mm/mm"
-      - "475.0 mm"
-    r_min:
-      - "0.4375 kg/mm"
-  model71:
-    f_max:
-      - "150 mm"
-      - "90.0 mm"
-      - "45 N/mm/mm"
-      - "180.0 mm"
-    r_min:
-      - "0.151875 kg/mm"
-  model43:
-    f_max:
-      - "100 mm"
-      - "100.0 mm"
-      - "35 N/mm/mm"
-      - "150.0 mm"
-    r_min:
-      - "0.07 kg/mm"
-  model128:
-    f_max:
-      - "200 mm"
-      - "120.0 mm"
-      - "45 N/mm/mm"
-      - "340.0 mm"
-    r_min:
-      - "0.36 kg/mm"
-  model89:
-    f_max:
-      - "150 mm"
-      - "150.0 mm"
-      - "45 N/mm/mm"
-      - "225.0 mm"
-    r_min:
-      - "0.2025 kg/mm"
-  model107:
-    f_max:
-      - "200 mm"
-      - "30.0 mm"
-      - "45 N/mm/mm"
-      - "285.0 mm"
-    r_min:
-      - "0.27 kg/mm"
-  model29:
-    f_max:
-      - "100 mm"
-      - "75.0 mm"
-      - "45 N/mm/mm"
-      - "112.5 mm"
-    r_min:
-      - "0.0675 kg/mm"
-  model32:
-    f_max:
-      - "100 mm"
-      - "20.0 mm"
-      - "45 N/mm/mm"
-      - "190.0 mm"
-    r_min:
-      - "0.09 kg/mm"
-  model97:
-    f_max:
-      - "200 mm"
-      - "60.0 mm"
-      - "35 N/mm/mm"
-      - "170.0 mm"
-    r_min:
-      - "0.14 kg/mm"
-  model119:
-    f_max:
-      - "200 mm"
-      - "150.0 mm"
-      - "45 N/mm/mm"
-      - "225.0 mm"
-    r_min:
-      - "0.27 kg/mm"
-  model2:
-    f_max:
-      - "100 mm"
-      - "10.0 mm"
-      - "45 N/mm/mm"
-      - "95.0 mm"
-    r_min:
-      - "0.045 kg/mm"
-  model141:
-    f_max:
-      - "250 mm"
-      - "75.0 mm"
-      - "28 N/mm/mm"
-      - "212.5 mm"
-    r_min:
-      - "0.175 kg/mm"
-  model178:
-    f_max:
-      - "250 mm"
-      - "250.0 mm"
-      - "35 N/mm/mm"
-      - "375.0 mm"
-    r_min:
-      - "0.4375 kg/mm"
-  model165:
-    f_max:
-      - "250 mm"
-      - "50.0 mm"
-      - "28 N/mm/mm"
-      - "475.0 mm"
-    r_min:
-      - "0.35 kg/mm"
-  model111:
-    f_max:
-      - "200 mm"
-      - "90.0 mm"
-      - "28 N/mm/mm"
-      - "255.0 mm"
-    r_min:
-      - "0.168 kg/mm"
-  model33:
-    f_max:
-      - "100 mm"
-      - "40.0 mm"
-      - "28 N/mm/mm"
-      - "180.0 mm"
-    r_min:
-      - "0.056 kg/mm"
-  model102:
-    f_max:
-      - "200 mm"
-      - "100.0 mm"
-      - "28 N/mm/mm"
-      - "150.0 mm"
-    r_min:
-      - "0.112 kg/mm"
-  model68:
-    f_max:
-      - "150 mm"
-      - "67.5 mm"
-      - "45 N/mm/mm"
-      - "191.25 mm"
-    r_min:
-      - "0.151875 kg/mm"
-  model163:
-    f_max:
-      - "250 mm"
-      - "187.5 mm"
-      - "35 N/mm/mm"
-      - "281.25 mm"
-    r_min:
-      - "0.328125 kg/mm"
-  model129:
-    f_max:
-      - "200 mm"
-      - "160.0 mm"
-      - "28 N/mm/mm"
-      - "320.0 mm"
-    r_min:
-      - "0.224 kg/mm"
-  model53:
-    f_max:
-      - "150 mm"
-      - "45.0 mm"
-      - "45 N/mm/mm"
-      - "127.5 mm"
-    r_min:
-      - "0.10125 kg/mm"
-  model125:
-    f_max:
-      - "200 mm"
-      - "80.0 mm"
-      - "45 N/mm/mm"
-      - "360.0 mm"
-    r_min:
-      - "0.36 kg/mm"
-  model161:
-    f_max:
-      - "250 mm"
-      - "150.0 mm"
-      - "45 N/mm/mm"
-      - "300.0 mm"
-    r_min:
-      - "0.421875 kg/mm"
-  model132:
-    f_max:
-      - "200 mm"
-      - "200.0 mm"
-      - "28 N/mm/mm"
-      - "300.0 mm"
-    r_min:
-      - "0.224 kg/mm"
-  model51:
-    f_max:
-      - "150 mm"
-      - "45.0 mm"
-      - "28 N/mm/mm"
-      - "127.5 mm"
-    r_min:
-      - "0.063 kg/mm"
-  model170:
-    f_max:
-      - "250 mm"
-      - "100.0 mm"
-      - "45 N/mm/mm"
-      - "450.0 mm"
-    r_min:
-      - "0.5625 kg/mm"
-  model173:
-    f_max:
-      - "250 mm"
-      - "150.0 mm"
-      - "45 N/mm/mm"
-      - "425.0 mm"
-    r_min:
-      - "0.5625 kg/mm"
-  model92:
-    f_max:
-      - "200 mm"
-      - "20.0 mm"
-      - "45 N/mm/mm"
-      - "190.0 mm"
-    r_min:
-      - "0.18 kg/mm"
-  model110:
-    f_max:
-      - "200 mm"
-      - "60.0 mm"
-      - "45 N/mm/mm"
-      - "270.0 mm"
-    r_min:
-      - "0.27 kg/mm"
-  model28:
-    f_max:
-      - "100 mm"
-      - "75.0 mm"
-      - "35 N/mm/mm"
-      - "112.5 mm"
-    r_min:
-      - "0.0525 kg/mm"
-  model160:
-    f_max:
-      - "250 mm"
-      - "150.0 mm"
-      - "35 N/mm/mm"
-      - "300.0 mm"
-    r_min:
-      - "0.328125 kg/mm"
-  model130:
-    f_max:
-      - "200 mm"
-      - "160.0 mm"
-      - "35 N/mm/mm"
-      - "320.0 mm"
-    r_min:
-      - "0.28 kg/mm"
-  model27:
-    f_max:
-      - "100 mm"
-      - "75.0 mm"
-      - "28 N/mm/mm"
-      - "112.5 mm"
-    r_min:
-      - "0.042 kg/mm"
-  model58:
-    f_max:
-      - "150 mm"
-      - "75.0 mm"
-      - "35 N/mm/mm"
-      - "112.5 mm"
-    r_min:
-      - "0.07875 kg/mm"
-  model47:
-    f_max:
-      - "150 mm"
-      - "15.0 mm"
-      - "45 N/mm/mm"
-      - "142.5 mm"
-    r_min:
-      - "0.10125 kg/mm"
-  model35:
-    f_max:
-      - "100 mm"
-      - "40.0 mm"
-      - "45 N/mm/mm"
-      - "180.0 mm"
-    r_min:
-      - "0.09 kg/mm"
-  model158:
-    f_max:
-      - "250 mm"
-      - "112.5 mm"
-      - "45 N/mm/mm"
-      - "318.75 mm"
-    r_min:
-      - "0.421875 kg/mm"
-  model34:
-    f_max:
-      - "100 mm"
-      - "40.0 mm"
-      - "35 N/mm/mm"
-      - "180.0 mm"
-    r_min:
-      - "0.07 kg/mm"
-  model121:
-    f_max:
-      - "200 mm"
-      - "40.0 mm"
-      - "35 N/mm/mm"
-      - "380.0 mm"
-    r_min:
-      - "0.28 kg/mm"
-  model31:
-    f_max:
-      - "100 mm"
-      - "20.0 mm"
-      - "35 N/mm/mm"
-      - "190.0 mm"
-    r_min:
-      - "0.07 kg/mm"
-  model9:
-    f_max:
-      - "100 mm"
-      - "40.0 mm"
-      - "28 N/mm/mm"
-      - "80.0 mm"
-    r_min:
-      - "0.028 kg/mm"
-  model69:
-    f_max:
-      - "150 mm"
-      - "90.0 mm"
-      - "28 N/mm/mm"
-      - "180.0 mm"
-    r_min:
-      - "0.0945 kg/mm"
-  model117:
-    f_max:
-      - "200 mm"
-      - "150.0 mm"
-      - "28 N/mm/mm"
-      - "225.0 mm"
-    r_min:
-      - "0.168 kg/mm"
-  model18:
-    f_max:
-      - "100 mm"
-      - "30.0 mm"
-      - "28 N/mm/mm"
-      - "135.0 mm"
-    r_min:
-      - "0.042 kg/mm"
-  model80:
-    f_max:
-      - "150 mm"
-      - "60.0 mm"
-      - "45 N/mm/mm"
-      - "270.0 mm"
-    r_min:
-      - "0.2025 kg/mm"
-  model177:
-    f_max:
-      - "250 mm"
-      - "250.0 mm"
-      - "28 N/mm/mm"
-      - "375.0 mm"
-    r_min:
-      - "0.35 kg/mm"
-  model25:
-    f_max:
-      - "100 mm"
-      - "60.0 mm"
-      - "35 N/mm/mm"
-      - "120.0 mm"
-    r_min:
-      - "0.0525 kg/mm"
-  model134:
-    f_max:
-      - "200 mm"
-      - "200.0 mm"
-      - "45 N/mm/mm"
-      - "300.0 mm"
-    r_min:
-      - "0.36 kg/mm"
-  model59:
-    f_max:
-      - "150 mm"
-      - "75.0 mm"
-      - "45 N/mm/mm"
-      - "112.5 mm"
-    r_min:
-      - "0.10125 kg/mm"
-  model48:
-    f_max:
-      - "150 mm"
-      - "30.0 mm"
-      - "28 N/mm/mm"
-      - "135.0 mm"
-    r_min:
-      - "0.063 kg/mm"
-  model94:
-    f_max:
-      - "200 mm"
-      - "40.0 mm"
-      - "35 N/mm/mm"
-      - "180.0 mm"
-    r_min:
-      - "0.14 kg/mm"
-  model63:
-    f_max:
-      - "150 mm"
-      - "45.0 mm"
-      - "28 N/mm/mm"
-      - "202.5 mm"
-    r_min:
-      - "0.0945 kg/mm"
-  model169:
-    f_max:
-      - "250 mm"
-      - "100.0 mm"
-      - "35 N/mm/mm"
-      - "450.0 mm"
-    r_min:
-      - "0.4375 kg/mm"
-  model56:
-    f_max:
-      - "150 mm"
-      - "60.0 mm"
-      - "45 N/mm/mm"
-      - "120.0 mm"
-    r_min:
-      - "0.10125 kg/mm"
-  model112:
-    f_max:
-      - "200 mm"
-      - "90.0 mm"
-      - "35 N/mm/mm"
-      - "255.0 mm"
-    r_min:
-      - "0.21 kg/mm"
-  model164:
-    f_max:
-      - "250 mm"
-      - "187.5 mm"
-      - "45 N/mm/mm"
-      - "281.25 mm"
-    r_min:
-      - "0.421875 kg/mm"
-  model8:
-    f_max:
-      - "100 mm"
-      - "30.0 mm"
-      - "45 N/mm/mm"
-      - "85.0 mm"
-    r_min:
-      - "0.045 kg/mm"
-  model81:
-    f_max:
-      - "150 mm"
-      - "90.0 mm"
-      - "28 N/mm/mm"
-      - "255.0 mm"
-    r_min:
-      - "0.126 kg/mm"
-  model7:
-    f_max:
-      - "100 mm"
-      - "30.0 mm"
-      - "35 N/mm/mm"
-      - "85.0 mm"
-    r_min:
-      - "0.035 kg/mm"
-  model73:
-    f_max:
-      - "150 mm"
-      - "112.5 mm"
-      - "35 N/mm/mm"
-      - "168.75 mm"
-    r_min:
-      - "0.118125 kg/mm"
-  model36:
-    f_max:
-      - "100 mm"
-      - "60.0 mm"
-      - "28 N/mm/mm"
-      - "170.0 mm"
-    r_min:
-      - "0.056 kg/mm"
-  model66:
-    f_max:
-      - "150 mm"
-      - "67.5 mm"
-      - "28 N/mm/mm"
-      - "191.25 mm"
-    r_min:
-      - "0.0945 kg/mm"
-  model104:
-    f_max:
-      - "200 mm"
-      - "100.0 mm"
-      - "45 N/mm/mm"
-      - "150.0 mm"
-    r_min:
-      - "0.18 kg/mm"
-  model106:
-    f_max:
-      - "200 mm"
-      - "30.0 mm"
-      - "35 N/mm/mm"
-      - "285.0 mm"
-    r_min:
-      - "0.21 kg/mm"
-  model118:
-    f_max:
-      - "200 mm"
-      - "150.0 mm"
-      - "35 N/mm/mm"
-      - "225.0 mm"
-    r_min:
-      - "0.21 kg/mm"
-  model151:
-    f_max:
-      - "250 mm"
-      - "37.5 mm"
-      - "35 N/mm/mm"
-      - "356.25 mm"
-    r_min:
-      - "0.328125 kg/mm"
-  model3:
-    f_max:
-      - "100 mm"
-      - "20.0 mm"
-      - "28 N/mm/mm"
-      - "90.0 mm"
-    r_min:
-      - "0.028 kg/mm"
-  model109:
-    f_max:
-      - "200 mm"
-      - "60.0 mm"
-      - "35 N/mm/mm"
-      - "270.0 mm"
-    r_min:
-      - "0.21 kg/mm"
-  model172:
-    f_max:
-      - "250 mm"
-      - "150.0 mm"
-      - "35 N/mm/mm"
-      - "425.0 mm"
-    r_min:
-      - "0.4375 kg/mm"
-  model145:
-    f_max:
-      - "250 mm"
-      - "100.0 mm"
-      - "35 N/mm/mm"
-      - "200.0 mm"
-    r_min:
-      - "0.21875 kg/mm"
-  model30:
-    f_max:
-      - "100 mm"
-      - "20.0 mm"
-      - "28 N/mm/mm"
-      - "190.0 mm"
-    r_min:
-      - "0.056 kg/mm"
-  model15:
-    f_max:
-      - "100 mm"
-      - "15.0 mm"
-      - "28 N/mm/mm"
-      - "142.5 mm"
-    r_min:
-      - "0.042 kg/mm"
-  model85:
-    f_max:
-      - "150 mm"
-      - "120.0 mm"
-      - "35 N/mm/mm"
-      - "240.0 mm"
-    r_min:
-      - "0.1575 kg/mm"
-  model114:
-    f_max:
-      - "200 mm"
-      - "120.0 mm"
-      - "28 N/mm/mm"
-      - "240.0 mm"
-    r_min:
-      - "0.168 kg/mm"
+    - 100 mm
+    - 40.0 mm
+    - 35 N/mm/mm
+    - 80.0 mm
+    r_min:
+    - 0.035 kg/mm
   model100:
     f_max:
-      - "200 mm"
-      - "80.0 mm"
-      - "35 N/mm/mm"
-      - "160.0 mm"
+    - 200 mm
+    - 80.0 mm
+    - 35 N/mm/mm
+    - 160.0 mm
     r_min:
-      - "0.14 kg/mm"
+    - 0.14 kg/mm
+  model101:
+    f_max:
+    - 200 mm
+    - 80.0 mm
+    - 45 N/mm/mm
+    - 160.0 mm
+    r_min:
+    - 0.18 kg/mm
+  model102:
+    f_max:
+    - 200 mm
+    - 100.0 mm
+    - 28 N/mm/mm
+    - 150.0 mm
+    r_min:
+    - 0.112 kg/mm
+  model103:
+    f_max:
+    - 200 mm
+    - 100.0 mm
+    - 35 N/mm/mm
+    - 150.0 mm
+    r_min:
+    - 0.14 kg/mm
+  model104:
+    f_max:
+    - 200 mm
+    - 100.0 mm
+    - 45 N/mm/mm
+    - 150.0 mm
+    r_min:
+    - 0.18 kg/mm
+  model105:
+    f_max:
+    - 200 mm
+    - 30.0 mm
+    - 28 N/mm/mm
+    - 285.0 mm
+    r_min:
+    - 0.168 kg/mm
+  model106:
+    f_max:
+    - 200 mm
+    - 30.0 mm
+    - 35 N/mm/mm
+    - 285.0 mm
+    r_min:
+    - 0.21 kg/mm
+  model107:
+    f_max:
+    - 200 mm
+    - 30.0 mm
+    - 45 N/mm/mm
+    - 285.0 mm
+    r_min:
+    - 0.27 kg/mm
+  model108:
+    f_max:
+    - 200 mm
+    - 60.0 mm
+    - 28 N/mm/mm
+    - 270.0 mm
+    r_min:
+    - 0.168 kg/mm
+  model109:
+    f_max:
+    - 200 mm
+    - 60.0 mm
+    - 35 N/mm/mm
+    - 270.0 mm
+    r_min:
+    - 0.21 kg/mm
+  model11:
+    f_max:
+    - 100 mm
+    - 40.0 mm
+    - 45 N/mm/mm
+    - 80.0 mm
+    r_min:
+    - 0.045 kg/mm
+  model110:
+    f_max:
+    - 200 mm
+    - 60.0 mm
+    - 45 N/mm/mm
+    - 270.0 mm
+    r_min:
+    - 0.27 kg/mm
+  model111:
+    f_max:
+    - 200 mm
+    - 90.0 mm
+    - 28 N/mm/mm
+    - 255.0 mm
+    r_min:
+    - 0.168 kg/mm
+  model112:
+    f_max:
+    - 200 mm
+    - 90.0 mm
+    - 35 N/mm/mm
+    - 255.0 mm
+    r_min:
+    - 0.21 kg/mm
+  model113:
+    f_max:
+    - 200 mm
+    - 90.0 mm
+    - 45 N/mm/mm
+    - 255.0 mm
+    r_min:
+    - 0.27 kg/mm
+  model114:
+    f_max:
+    - 200 mm
+    - 120.0 mm
+    - 28 N/mm/mm
+    - 240.0 mm
+    r_min:
+    - 0.168 kg/mm
+  model115:
+    f_max:
+    - 200 mm
+    - 120.0 mm
+    - 35 N/mm/mm
+    - 240.0 mm
+    r_min:
+    - 0.21 kg/mm
+  model116:
+    f_max:
+    - 200 mm
+    - 120.0 mm
+    - 45 N/mm/mm
+    - 240.0 mm
+    r_min:
+    - 0.27 kg/mm
+  model117:
+    f_max:
+    - 200 mm
+    - 150.0 mm
+    - 28 N/mm/mm
+    - 225.0 mm
+    r_min:
+    - 0.168 kg/mm
+  model118:
+    f_max:
+    - 200 mm
+    - 150.0 mm
+    - 35 N/mm/mm
+    - 225.0 mm
+    r_min:
+    - 0.21 kg/mm
+  model119:
+    f_max:
+    - 200 mm
+    - 150.0 mm
+    - 45 N/mm/mm
+    - 225.0 mm
+    r_min:
+    - 0.27 kg/mm
+  model12:
+    f_max:
+    - 100 mm
+    - 50.0 mm
+    - 28 N/mm/mm
+    - 75.0 mm
+    r_min:
+    - 0.028 kg/mm
+  model120:
+    f_max:
+    - 200 mm
+    - 40.0 mm
+    - 28 N/mm/mm
+    - 380.0 mm
+    r_min:
+    - 0.224 kg/mm
+  model121:
+    f_max:
+    - 200 mm
+    - 40.0 mm
+    - 35 N/mm/mm
+    - 380.0 mm
+    r_min:
+    - 0.28 kg/mm
+  model122:
+    f_max:
+    - 200 mm
+    - 40.0 mm
+    - 45 N/mm/mm
+    - 380.0 mm
+    r_min:
+    - 0.36 kg/mm
+  model123:
+    f_max:
+    - 200 mm
+    - 80.0 mm
+    - 28 N/mm/mm
+    - 360.0 mm
+    r_min:
+    - 0.224 kg/mm
+  model124:
+    f_max:
+    - 200 mm
+    - 80.0 mm
+    - 35 N/mm/mm
+    - 360.0 mm
+    r_min:
+    - 0.28 kg/mm
+  model125:
+    f_max:
+    - 200 mm
+    - 80.0 mm
+    - 45 N/mm/mm
+    - 360.0 mm
+    r_min:
+    - 0.36 kg/mm
+  model126:
+    f_max:
+    - 200 mm
+    - 120.0 mm
+    - 28 N/mm/mm
+    - 340.0 mm
+    r_min:
+    - 0.224 kg/mm
+  model127:
+    f_max:
+    - 200 mm
+    - 120.0 mm
+    - 35 N/mm/mm
+    - 340.0 mm
+    r_min:
+    - 0.28 kg/mm
+  model128:
+    f_max:
+    - 200 mm
+    - 120.0 mm
+    - 45 N/mm/mm
+    - 340.0 mm
+    r_min:
+    - 0.36 kg/mm
+  model129:
+    f_max:
+    - 200 mm
+    - 160.0 mm
+    - 28 N/mm/mm
+    - 320.0 mm
+    r_min:
+    - 0.224 kg/mm
+  model13:
+    f_max:
+    - 100 mm
+    - 50.0 mm
+    - 35 N/mm/mm
+    - 75.0 mm
+    r_min:
+    - 0.035 kg/mm
+  model130:
+    f_max:
+    - 200 mm
+    - 160.0 mm
+    - 35 N/mm/mm
+    - 320.0 mm
+    r_min:
+    - 0.28 kg/mm
+  model131:
+    f_max:
+    - 200 mm
+    - 160.0 mm
+    - 45 N/mm/mm
+    - 320.0 mm
+    r_min:
+    - 0.36 kg/mm
+  model132:
+    f_max:
+    - 200 mm
+    - 200.0 mm
+    - 28 N/mm/mm
+    - 300.0 mm
+    r_min:
+    - 0.224 kg/mm
+  model133:
+    f_max:
+    - 200 mm
+    - 200.0 mm
+    - 35 N/mm/mm
+    - 300.0 mm
+    r_min:
+    - 0.28 kg/mm
+  model134:
+    f_max:
+    - 200 mm
+    - 200.0 mm
+    - 45 N/mm/mm
+    - 300.0 mm
+    r_min:
+    - 0.36 kg/mm
+  model135:
+    f_max:
+    - 250 mm
+    - 25.0 mm
+    - 28 N/mm/mm
+    - 237.5 mm
+    r_min:
+    - 0.175 kg/mm
+  model136:
+    f_max:
+    - 250 mm
+    - 25.0 mm
+    - 35 N/mm/mm
+    - 237.5 mm
+    r_min:
+    - 0.21875 kg/mm
+  model137:
+    f_max:
+    - 250 mm
+    - 25.0 mm
+    - 45 N/mm/mm
+    - 237.5 mm
+    r_min:
+    - 0.28125 kg/mm
+  model138:
+    f_max:
+    - 250 mm
+    - 50.0 mm
+    - 28 N/mm/mm
+    - 225.0 mm
+    r_min:
+    - 0.175 kg/mm
+  model139:
+    f_max:
+    - 250 mm
+    - 50.0 mm
+    - 35 N/mm/mm
+    - 225.0 mm
+    r_min:
+    - 0.21875 kg/mm
+  model14:
+    f_max:
+    - 100 mm
+    - 50.0 mm
+    - 45 N/mm/mm
+    - 75.0 mm
+    r_min:
+    - 0.045 kg/mm
+  model140:
+    f_max:
+    - 250 mm
+    - 50.0 mm
+    - 45 N/mm/mm
+    - 225.0 mm
+    r_min:
+    - 0.28125 kg/mm
+  model141:
+    f_max:
+    - 250 mm
+    - 75.0 mm
+    - 28 N/mm/mm
+    - 212.5 mm
+    r_min:
+    - 0.175 kg/mm
+  model142:
+    f_max:
+    - 250 mm
+    - 75.0 mm
+    - 35 N/mm/mm
+    - 212.5 mm
+    r_min:
+    - 0.21875 kg/mm
+  model143:
+    f_max:
+    - 250 mm
+    - 75.0 mm
+    - 45 N/mm/mm
+    - 212.5 mm
+    r_min:
+    - 0.28125 kg/mm
+  model144:
+    f_max:
+    - 250 mm
+    - 100.0 mm
+    - 28 N/mm/mm
+    - 200.0 mm
+    r_min:
+    - 0.175 kg/mm
+  model145:
+    f_max:
+    - 250 mm
+    - 100.0 mm
+    - 35 N/mm/mm
+    - 200.0 mm
+    r_min:
+    - 0.21875 kg/mm
+  model146:
+    f_max:
+    - 250 mm
+    - 100.0 mm
+    - 45 N/mm/mm
+    - 200.0 mm
+    r_min:
+    - 0.28125 kg/mm
+  model147:
+    f_max:
+    - 250 mm
+    - 125.0 mm
+    - 28 N/mm/mm
+    - 187.5 mm
+    r_min:
+    - 0.175 kg/mm
+  model148:
+    f_max:
+    - 250 mm
+    - 125.0 mm
+    - 35 N/mm/mm
+    - 187.5 mm
+    r_min:
+    - 0.21875 kg/mm
+  model149:
+    f_max:
+    - 250 mm
+    - 125.0 mm
+    - 45 N/mm/mm
+    - 187.5 mm
+    r_min:
+    - 0.28125 kg/mm
+  model15:
+    f_max:
+    - 100 mm
+    - 15.0 mm
+    - 28 N/mm/mm
+    - 142.5 mm
+    r_min:
+    - 0.042 kg/mm
+  model150:
+    f_max:
+    - 250 mm
+    - 37.5 mm
+    - 28 N/mm/mm
+    - 356.25 mm
+    r_min:
+    - 0.2625 kg/mm
+  model151:
+    f_max:
+    - 250 mm
+    - 37.5 mm
+    - 35 N/mm/mm
+    - 356.25 mm
+    r_min:
+    - 0.328125 kg/mm
+  model152:
+    f_max:
+    - 250 mm
+    - 37.5 mm
+    - 45 N/mm/mm
+    - 356.25 mm
+    r_min:
+    - 0.421875 kg/mm
+  model153:
+    f_max:
+    - 250 mm
+    - 75.0 mm
+    - 28 N/mm/mm
+    - 337.5 mm
+    r_min:
+    - 0.2625 kg/mm
+  model154:
+    f_max:
+    - 250 mm
+    - 75.0 mm
+    - 35 N/mm/mm
+    - 337.5 mm
+    r_min:
+    - 0.328125 kg/mm
+  model155:
+    f_max:
+    - 250 mm
+    - 75.0 mm
+    - 45 N/mm/mm
+    - 337.5 mm
+    r_min:
+    - 0.421875 kg/mm
+  model156:
+    f_max:
+    - 250 mm
+    - 112.5 mm
+    - 28 N/mm/mm
+    - 318.75 mm
+    r_min:
+    - 0.2625 kg/mm
+  model157:
+    f_max:
+    - 250 mm
+    - 112.5 mm
+    - 35 N/mm/mm
+    - 318.75 mm
+    r_min:
+    - 0.328125 kg/mm
+  model158:
+    f_max:
+    - 250 mm
+    - 112.5 mm
+    - 45 N/mm/mm
+    - 318.75 mm
+    r_min:
+    - 0.421875 kg/mm
+  model159:
+    f_max:
+    - 250 mm
+    - 150.0 mm
+    - 28 N/mm/mm
+    - 300.0 mm
+    r_min:
+    - 0.2625 kg/mm
+  model16:
+    f_max:
+    - 100 mm
+    - 15.0 mm
+    - 35 N/mm/mm
+    - 142.5 mm
+    r_min:
+    - 0.0525 kg/mm
+  model160:
+    f_max:
+    - 250 mm
+    - 150.0 mm
+    - 35 N/mm/mm
+    - 300.0 mm
+    r_min:
+    - 0.328125 kg/mm
+  model161:
+    f_max:
+    - 250 mm
+    - 150.0 mm
+    - 45 N/mm/mm
+    - 300.0 mm
+    r_min:
+    - 0.421875 kg/mm
+  model162:
+    f_max:
+    - 250 mm
+    - 187.5 mm
+    - 28 N/mm/mm
+    - 281.25 mm
+    r_min:
+    - 0.2625 kg/mm
+  model163:
+    f_max:
+    - 250 mm
+    - 187.5 mm
+    - 35 N/mm/mm
+    - 281.25 mm
+    r_min:
+    - 0.328125 kg/mm
+  model164:
+    f_max:
+    - 250 mm
+    - 187.5 mm
+    - 45 N/mm/mm
+    - 281.25 mm
+    r_min:
+    - 0.421875 kg/mm
+  model165:
+    f_max:
+    - 250 mm
+    - 50.0 mm
+    - 28 N/mm/mm
+    - 475.0 mm
+    r_min:
+    - 0.35 kg/mm
+  model166:
+    f_max:
+    - 250 mm
+    - 50.0 mm
+    - 35 N/mm/mm
+    - 475.0 mm
+    r_min:
+    - 0.4375 kg/mm
+  model167:
+    f_max:
+    - 250 mm
+    - 50.0 mm
+    - 45 N/mm/mm
+    - 475.0 mm
+    r_min:
+    - 0.5625 kg/mm
+  model168:
+    f_max:
+    - 250 mm
+    - 100.0 mm
+    - 28 N/mm/mm
+    - 450.0 mm
+    r_min:
+    - 0.35 kg/mm
+  model169:
+    f_max:
+    - 250 mm
+    - 100.0 mm
+    - 35 N/mm/mm
+    - 450.0 mm
+    r_min:
+    - 0.4375 kg/mm
+  model17:
+    f_max:
+    - 100 mm
+    - 15.0 mm
+    - 45 N/mm/mm
+    - 142.5 mm
+    r_min:
+    - 0.0675 kg/mm
+  model170:
+    f_max:
+    - 250 mm
+    - 100.0 mm
+    - 45 N/mm/mm
+    - 450.0 mm
+    r_min:
+    - 0.5625 kg/mm
+  model171:
+    f_max:
+    - 250 mm
+    - 150.0 mm
+    - 28 N/mm/mm
+    - 425.0 mm
+    r_min:
+    - 0.35 kg/mm
+  model172:
+    f_max:
+    - 250 mm
+    - 150.0 mm
+    - 35 N/mm/mm
+    - 425.0 mm
+    r_min:
+    - 0.4375 kg/mm
+  model173:
+    f_max:
+    - 250 mm
+    - 150.0 mm
+    - 45 N/mm/mm
+    - 425.0 mm
+    r_min:
+    - 0.5625 kg/mm
+  model174:
+    f_max:
+    - 250 mm
+    - 200.0 mm
+    - 28 N/mm/mm
+    - 400.0 mm
+    r_min:
+    - 0.35 kg/mm
+  model175:
+    f_max:
+    - 250 mm
+    - 200.0 mm
+    - 35 N/mm/mm
+    - 400.0 mm
+    r_min:
+    - 0.4375 kg/mm
+  model176:
+    f_max:
+    - 250 mm
+    - 200.0 mm
+    - 45 N/mm/mm
+    - 400.0 mm
+    r_min:
+    - 0.5625 kg/mm
+  model177:
+    f_max:
+    - 250 mm
+    - 250.0 mm
+    - 28 N/mm/mm
+    - 375.0 mm
+    r_min:
+    - 0.35 kg/mm
+  model178:
+    f_max:
+    - 250 mm
+    - 250.0 mm
+    - 35 N/mm/mm
+    - 375.0 mm
+    r_min:
+    - 0.4375 kg/mm
+  model179:
+    f_max:
+    - 250 mm
+    - 250.0 mm
+    - 45 N/mm/mm
+    - 375.0 mm
+    r_min:
+    - 0.5625 kg/mm
+  model18:
+    f_max:
+    - 100 mm
+    - 30.0 mm
+    - 28 N/mm/mm
+    - 135.0 mm
+    r_min:
+    - 0.042 kg/mm
+  model19:
+    f_max:
+    - 100 mm
+    - 30.0 mm
+    - 35 N/mm/mm
+    - 135.0 mm
+    r_min:
+    - 0.0525 kg/mm
+  model2:
+    f_max:
+    - 100 mm
+    - 10.0 mm
+    - 45 N/mm/mm
+    - 95.0 mm
+    r_min:
+    - 0.045 kg/mm
+  model20:
+    f_max:
+    - 100 mm
+    - 30.0 mm
+    - 45 N/mm/mm
+    - 135.0 mm
+    r_min:
+    - 0.0675 kg/mm
+  model21:
+    f_max:
+    - 100 mm
+    - 45.0 mm
+    - 28 N/mm/mm
+    - 127.5 mm
+    r_min:
+    - 0.042 kg/mm
+  model22:
+    f_max:
+    - 100 mm
+    - 45.0 mm
+    - 35 N/mm/mm
+    - 127.5 mm
+    r_min:
+    - 0.0525 kg/mm
+  model23:
+    f_max:
+    - 100 mm
+    - 45.0 mm
+    - 45 N/mm/mm
+    - 127.5 mm
+    r_min:
+    - 0.0675 kg/mm
+  model24:
+    f_max:
+    - 100 mm
+    - 60.0 mm
+    - 28 N/mm/mm
+    - 120.0 mm
+    r_min:
+    - 0.042 kg/mm
+  model25:
+    f_max:
+    - 100 mm
+    - 60.0 mm
+    - 35 N/mm/mm
+    - 120.0 mm
+    r_min:
+    - 0.0525 kg/mm
+  model26:
+    f_max:
+    - 100 mm
+    - 60.0 mm
+    - 45 N/mm/mm
+    - 120.0 mm
+    r_min:
+    - 0.0675 kg/mm
+  model27:
+    f_max:
+    - 100 mm
+    - 75.0 mm
+    - 28 N/mm/mm
+    - 112.5 mm
+    r_min:
+    - 0.042 kg/mm
+  model28:
+    f_max:
+    - 100 mm
+    - 75.0 mm
+    - 35 N/mm/mm
+    - 112.5 mm
+    r_min:
+    - 0.0525 kg/mm
+  model29:
+    f_max:
+    - 100 mm
+    - 75.0 mm
+    - 45 N/mm/mm
+    - 112.5 mm
+    r_min:
+    - 0.0675 kg/mm
+  model3:
+    f_max:
+    - 100 mm
+    - 20.0 mm
+    - 28 N/mm/mm
+    - 90.0 mm
+    r_min:
+    - 0.028 kg/mm
+  model30:
+    f_max:
+    - 100 mm
+    - 20.0 mm
+    - 28 N/mm/mm
+    - 190.0 mm
+    r_min:
+    - 0.056 kg/mm
+  model31:
+    f_max:
+    - 100 mm
+    - 20.0 mm
+    - 35 N/mm/mm
+    - 190.0 mm
+    r_min:
+    - 0.07 kg/mm
+  model32:
+    f_max:
+    - 100 mm
+    - 20.0 mm
+    - 45 N/mm/mm
+    - 190.0 mm
+    r_min:
+    - 0.09 kg/mm
+  model33:
+    f_max:
+    - 100 mm
+    - 40.0 mm
+    - 28 N/mm/mm
+    - 180.0 mm
+    r_min:
+    - 0.056 kg/mm
+  model34:
+    f_max:
+    - 100 mm
+    - 40.0 mm
+    - 35 N/mm/mm
+    - 180.0 mm
+    r_min:
+    - 0.07 kg/mm
+  model35:
+    f_max:
+    - 100 mm
+    - 40.0 mm
+    - 45 N/mm/mm
+    - 180.0 mm
+    r_min:
+    - 0.09 kg/mm
+  model36:
+    f_max:
+    - 100 mm
+    - 60.0 mm
+    - 28 N/mm/mm
+    - 170.0 mm
+    r_min:
+    - 0.056 kg/mm
+  model37:
+    f_max:
+    - 100 mm
+    - 60.0 mm
+    - 35 N/mm/mm
+    - 170.0 mm
+    r_min:
+    - 0.07 kg/mm
+  model38:
+    f_max:
+    - 100 mm
+    - 60.0 mm
+    - 45 N/mm/mm
+    - 170.0 mm
+    r_min:
+    - 0.09 kg/mm
+  model39:
+    f_max:
+    - 100 mm
+    - 80.0 mm
+    - 28 N/mm/mm
+    - 160.0 mm
+    r_min:
+    - 0.056 kg/mm
+  model4:
+    f_max:
+    - 100 mm
+    - 20.0 mm
+    - 35 N/mm/mm
+    - 90.0 mm
+    r_min:
+    - 0.035 kg/mm
+  model40:
+    f_max:
+    - 100 mm
+    - 80.0 mm
+    - 35 N/mm/mm
+    - 160.0 mm
+    r_min:
+    - 0.07 kg/mm
+  model41:
+    f_max:
+    - 100 mm
+    - 80.0 mm
+    - 45 N/mm/mm
+    - 160.0 mm
+    r_min:
+    - 0.09 kg/mm
+  model42:
+    f_max:
+    - 100 mm
+    - 100.0 mm
+    - 28 N/mm/mm
+    - 150.0 mm
+    r_min:
+    - 0.056 kg/mm
+  model43:
+    f_max:
+    - 100 mm
+    - 100.0 mm
+    - 35 N/mm/mm
+    - 150.0 mm
+    r_min:
+    - 0.07 kg/mm
+  model44:
+    f_max:
+    - 100 mm
+    - 100.0 mm
+    - 45 N/mm/mm
+    - 150.0 mm
+    r_min:
+    - 0.09 kg/mm
+  model45:
+    f_max:
+    - 150 mm
+    - 15.0 mm
+    - 28 N/mm/mm
+    - 142.5 mm
+    r_min:
+    - 0.063 kg/mm
+  model46:
+    f_max:
+    - 150 mm
+    - 15.0 mm
+    - 35 N/mm/mm
+    - 142.5 mm
+    r_min:
+    - 0.07875 kg/mm
+  model47:
+    f_max:
+    - 150 mm
+    - 15.0 mm
+    - 45 N/mm/mm
+    - 142.5 mm
+    r_min:
+    - 0.10125 kg/mm
+  model48:
+    f_max:
+    - 150 mm
+    - 30.0 mm
+    - 28 N/mm/mm
+    - 135.0 mm
+    r_min:
+    - 0.063 kg/mm
+  model49:
+    f_max:
+    - 150 mm
+    - 30.0 mm
+    - 35 N/mm/mm
+    - 135.0 mm
+    r_min:
+    - 0.07875 kg/mm
+  model5:
+    f_max:
+    - 100 mm
+    - 20.0 mm
+    - 45 N/mm/mm
+    - 90.0 mm
+    r_min:
+    - 0.045 kg/mm
+  model50:
+    f_max:
+    - 150 mm
+    - 30.0 mm
+    - 45 N/mm/mm
+    - 135.0 mm
+    r_min:
+    - 0.10125 kg/mm
+  model51:
+    f_max:
+    - 150 mm
+    - 45.0 mm
+    - 28 N/mm/mm
+    - 127.5 mm
+    r_min:
+    - 0.063 kg/mm
+  model52:
+    f_max:
+    - 150 mm
+    - 45.0 mm
+    - 35 N/mm/mm
+    - 127.5 mm
+    r_min:
+    - 0.07875 kg/mm
+  model53:
+    f_max:
+    - 150 mm
+    - 45.0 mm
+    - 45 N/mm/mm
+    - 127.5 mm
+    r_min:
+    - 0.10125 kg/mm
   model54:
     f_max:
-      - "150 mm"
-      - "60.0 mm"
-      - "28 N/mm/mm"
-      - "120.0 mm"
+    - 150 mm
+    - 60.0 mm
+    - 28 N/mm/mm
+    - 120.0 mm
     r_min:
-      - "0.063 kg/mm"
-R:
-  - "kg/mm"
-F:
-  - "mm"
-  - "mm"
-  - "N/mm/mm"
-  - "mm"
+    - 0.063 kg/mm
+  model55:
+    f_max:
+    - 150 mm
+    - 60.0 mm
+    - 35 N/mm/mm
+    - 120.0 mm
+    r_min:
+    - 0.07875 kg/mm
+  model56:
+    f_max:
+    - 150 mm
+    - 60.0 mm
+    - 45 N/mm/mm
+    - 120.0 mm
+    r_min:
+    - 0.10125 kg/mm
+  model57:
+    f_max:
+    - 150 mm
+    - 75.0 mm
+    - 28 N/mm/mm
+    - 112.5 mm
+    r_min:
+    - 0.063 kg/mm
+  model58:
+    f_max:
+    - 150 mm
+    - 75.0 mm
+    - 35 N/mm/mm
+    - 112.5 mm
+    r_min:
+    - 0.07875 kg/mm
+  model59:
+    f_max:
+    - 150 mm
+    - 75.0 mm
+    - 45 N/mm/mm
+    - 112.5 mm
+    r_min:
+    - 0.10125 kg/mm
+  model6:
+    f_max:
+    - 100 mm
+    - 30.0 mm
+    - 28 N/mm/mm
+    - 85.0 mm
+    r_min:
+    - 0.028 kg/mm
+  model60:
+    f_max:
+    - 150 mm
+    - 22.5 mm
+    - 28 N/mm/mm
+    - 213.75 mm
+    r_min:
+    - 0.0945 kg/mm
+  model61:
+    f_max:
+    - 150 mm
+    - 22.5 mm
+    - 35 N/mm/mm
+    - 213.75 mm
+    r_min:
+    - 0.118125 kg/mm
+  model62:
+    f_max:
+    - 150 mm
+    - 22.5 mm
+    - 45 N/mm/mm
+    - 213.75 mm
+    r_min:
+    - 0.151875 kg/mm
+  model63:
+    f_max:
+    - 150 mm
+    - 45.0 mm
+    - 28 N/mm/mm
+    - 202.5 mm
+    r_min:
+    - 0.0945 kg/mm
+  model64:
+    f_max:
+    - 150 mm
+    - 45.0 mm
+    - 35 N/mm/mm
+    - 202.5 mm
+    r_min:
+    - 0.118125 kg/mm
+  model65:
+    f_max:
+    - 150 mm
+    - 45.0 mm
+    - 45 N/mm/mm
+    - 202.5 mm
+    r_min:
+    - 0.151875 kg/mm
+  model66:
+    f_max:
+    - 150 mm
+    - 67.5 mm
+    - 28 N/mm/mm
+    - 191.25 mm
+    r_min:
+    - 0.0945 kg/mm
+  model67:
+    f_max:
+    - 150 mm
+    - 67.5 mm
+    - 35 N/mm/mm
+    - 191.25 mm
+    r_min:
+    - 0.118125 kg/mm
+  model68:
+    f_max:
+    - 150 mm
+    - 67.5 mm
+    - 45 N/mm/mm
+    - 191.25 mm
+    r_min:
+    - 0.151875 kg/mm
+  model69:
+    f_max:
+    - 150 mm
+    - 90.0 mm
+    - 28 N/mm/mm
+    - 180.0 mm
+    r_min:
+    - 0.0945 kg/mm
+  model7:
+    f_max:
+    - 100 mm
+    - 30.0 mm
+    - 35 N/mm/mm
+    - 85.0 mm
+    r_min:
+    - 0.035 kg/mm
+  model70:
+    f_max:
+    - 150 mm
+    - 90.0 mm
+    - 35 N/mm/mm
+    - 180.0 mm
+    r_min:
+    - 0.118125 kg/mm
+  model71:
+    f_max:
+    - 150 mm
+    - 90.0 mm
+    - 45 N/mm/mm
+    - 180.0 mm
+    r_min:
+    - 0.151875 kg/mm
+  model72:
+    f_max:
+    - 150 mm
+    - 112.5 mm
+    - 28 N/mm/mm
+    - 168.75 mm
+    r_min:
+    - 0.0945 kg/mm
+  model73:
+    f_max:
+    - 150 mm
+    - 112.5 mm
+    - 35 N/mm/mm
+    - 168.75 mm
+    r_min:
+    - 0.118125 kg/mm
+  model74:
+    f_max:
+    - 150 mm
+    - 112.5 mm
+    - 45 N/mm/mm
+    - 168.75 mm
+    r_min:
+    - 0.151875 kg/mm
+  model75:
+    f_max:
+    - 150 mm
+    - 30.0 mm
+    - 28 N/mm/mm
+    - 285.0 mm
+    r_min:
+    - 0.126 kg/mm
+  model76:
+    f_max:
+    - 150 mm
+    - 30.0 mm
+    - 35 N/mm/mm
+    - 285.0 mm
+    r_min:
+    - 0.1575 kg/mm
+  model77:
+    f_max:
+    - 150 mm
+    - 30.0 mm
+    - 45 N/mm/mm
+    - 285.0 mm
+    r_min:
+    - 0.2025 kg/mm
+  model78:
+    f_max:
+    - 150 mm
+    - 60.0 mm
+    - 28 N/mm/mm
+    - 270.0 mm
+    r_min:
+    - 0.126 kg/mm
+  model79:
+    f_max:
+    - 150 mm
+    - 60.0 mm
+    - 35 N/mm/mm
+    - 270.0 mm
+    r_min:
+    - 0.1575 kg/mm
+  model8:
+    f_max:
+    - 100 mm
+    - 30.0 mm
+    - 45 N/mm/mm
+    - 85.0 mm
+    r_min:
+    - 0.045 kg/mm
+  model80:
+    f_max:
+    - 150 mm
+    - 60.0 mm
+    - 45 N/mm/mm
+    - 270.0 mm
+    r_min:
+    - 0.2025 kg/mm
+  model81:
+    f_max:
+    - 150 mm
+    - 90.0 mm
+    - 28 N/mm/mm
+    - 255.0 mm
+    r_min:
+    - 0.126 kg/mm
+  model82:
+    f_max:
+    - 150 mm
+    - 90.0 mm
+    - 35 N/mm/mm
+    - 255.0 mm
+    r_min:
+    - 0.1575 kg/mm
+  model83:
+    f_max:
+    - 150 mm
+    - 90.0 mm
+    - 45 N/mm/mm
+    - 255.0 mm
+    r_min:
+    - 0.2025 kg/mm
+  model84:
+    f_max:
+    - 150 mm
+    - 120.0 mm
+    - 28 N/mm/mm
+    - 240.0 mm
+    r_min:
+    - 0.126 kg/mm
+  model85:
+    f_max:
+    - 150 mm
+    - 120.0 mm
+    - 35 N/mm/mm
+    - 240.0 mm
+    r_min:
+    - 0.1575 kg/mm
+  model86:
+    f_max:
+    - 150 mm
+    - 120.0 mm
+    - 45 N/mm/mm
+    - 240.0 mm
+    r_min:
+    - 0.2025 kg/mm
+  model87:
+    f_max:
+    - 150 mm
+    - 150.0 mm
+    - 28 N/mm/mm
+    - 225.0 mm
+    r_min:
+    - 0.126 kg/mm
+  model88:
+    f_max:
+    - 150 mm
+    - 150.0 mm
+    - 35 N/mm/mm
+    - 225.0 mm
+    r_min:
+    - 0.1575 kg/mm
+  model89:
+    f_max:
+    - 150 mm
+    - 150.0 mm
+    - 45 N/mm/mm
+    - 225.0 mm
+    r_min:
+    - 0.2025 kg/mm
+  model9:
+    f_max:
+    - 100 mm
+    - 40.0 mm
+    - 28 N/mm/mm
+    - 80.0 mm
+    r_min:
+    - 0.028 kg/mm
+  model90:
+    f_max:
+    - 200 mm
+    - 20.0 mm
+    - 28 N/mm/mm
+    - 190.0 mm
+    r_min:
+    - 0.112 kg/mm
+  model91:
+    f_max:
+    - 200 mm
+    - 20.0 mm
+    - 35 N/mm/mm
+    - 190.0 mm
+    r_min:
+    - 0.14 kg/mm
+  model92:
+    f_max:
+    - 200 mm
+    - 20.0 mm
+    - 45 N/mm/mm
+    - 190.0 mm
+    r_min:
+    - 0.18 kg/mm
+  model93:
+    f_max:
+    - 200 mm
+    - 40.0 mm
+    - 28 N/mm/mm
+    - 180.0 mm
+    r_min:
+    - 0.112 kg/mm
+  model94:
+    f_max:
+    - 200 mm
+    - 40.0 mm
+    - 35 N/mm/mm
+    - 180.0 mm
+    r_min:
+    - 0.14 kg/mm
+  model95:
+    f_max:
+    - 200 mm
+    - 40.0 mm
+    - 45 N/mm/mm
+    - 180.0 mm
+    r_min:
+    - 0.18 kg/mm
+  model96:
+    f_max:
+    - 200 mm
+    - 60.0 mm
+    - 28 N/mm/mm
+    - 170.0 mm
+    r_min:
+    - 0.112 kg/mm
+  model97:
+    f_max:
+    - 200 mm
+    - 60.0 mm
+    - 35 N/mm/mm
+    - 170.0 mm
+    r_min:
+    - 0.14 kg/mm
+  model98:
+    f_max:
+    - 200 mm
+    - 60.0 mm
+    - 45 N/mm/mm
+    - 170.0 mm
+    r_min:
+    - 0.18 kg/mm
+  model99:
+    f_max:
+    - 200 mm
+    - 80.0 mm
+    - 28 N/mm/mm
+    - 160.0 mm
+    r_min:
+    - 0.112 kg/mm

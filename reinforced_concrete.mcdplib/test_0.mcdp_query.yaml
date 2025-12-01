@@ -4,14 +4,10 @@ model: "`reinforced_concrete"
 query:
   query_type: FixFunMinRes
   min_f: 
-    moment_demand: 5000000000 N*mm
+    applied_load: 20 N/mm
+    element_length: 4000 mm
   max_r:
-    section_width: 500 mm 
-    compression_depth: 500 mm
-    concrete_strength: 45 N/mm/mm
-    total_rebar_area: 5000 mm*mm
-    moment_arm: 500 mm
+    carbon: 10000
 
   optimize_for:
-  - section_width
-  - concrete_strength
+  - carbon

@@ -4,7 +4,7 @@ import yaml
 
 def main():
     # Read the template catalog yaml file
-    with open("reinforced_concrete.mcdplib/concrete_section_catalogues/concrete_section_catalogue_1.yaml", 'r', encoding="UTF-8") as file_stream:
+    with open("reinforced_concrete.mcdplib/rebar_layout_catalogues/rebar_layout_catalogue_1.yaml", 'r', encoding="UTF-8") as file_stream:
         data = yaml.safe_load(file_stream)
         print(f"Template Catalogue Data schema: {data.keys()}")
 
@@ -15,7 +15,7 @@ def main():
         print(f"Implementation: {implementation}")
 
         # write the implementation to the actual catalogue file
-        with open("reinforced_concrete.mcdplib/concrete_section_catalogues/concrete_section_catalogue_run.yaml", 'w', encoding="UTF-8") as file_stream:
+        with open("reinforced_concrete.mcdplib/rebar_layout_catalogues/rebar_layout_catalogue_1.yaml", 'w', encoding="UTF-8") as file_stream:
             yaml.dump(data, file_stream)
 
     # start the docker container
