@@ -1,4 +1,4 @@
-mcdp {
+dp {
     provides section_width [mm]
     provides compression_depth [mm]
     provides concrete_strength [N/mm/mm]
