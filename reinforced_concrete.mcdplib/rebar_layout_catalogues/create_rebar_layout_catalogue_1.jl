@@ -95,7 +95,7 @@ end
 # 3. Save CSV
 # -------------------------------------------------------------------
 
-pathToCsv = "reinforced_concrete.mcdplib/rebar_catalogues/rebar_catalogue_1.csv"
+pathToCsv = "reinforced_concrete.mcdplib/rebar_layout_catalogues/rebar_layout_catalogue_1.csv"
 
 CSV.write(pathToCsv, df)
 
@@ -104,5 +104,5 @@ println("Saved $pathToCsv with ", nrow(df), " rows.")
 # -------------------------------------------------------------------
 # 4. Make the .yaml file from the csv file
 # -------------------------------------------------------------------
-pathToYaml = "reinforced_concrete.mcdplib/rebar_catalogues/rebar_catalogue_1.yaml"
+pathToYaml = "reinforced_concrete.mcdplib/rebar_layout_catalogues/rebar_layout_catalogue_1.yaml"
 myMCDP.convert_csv_to_yaml(pathToCsv, saveFilePath = pathToYaml)
