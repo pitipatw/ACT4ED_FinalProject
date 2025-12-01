@@ -1,13 +1,14 @@
-title: test_0
+title: result_2_3
 description: 'test query for the entire component.'
 model: "`reinforced_concrete"
 query:
-  query_type: FixFunMinRes
+  query_type: FixResMaxFun
   min_f: 
-    applied_load: 20 N/mm
+    applied_load: 10 N/mm
     element_length: 4000 mm
   max_r:
-    carbon: 1000 kg/mm
+    carbon: 150 kg/mm
 
   optimize_for:
-  - carbon
+  - applied_load
+  - element_length
