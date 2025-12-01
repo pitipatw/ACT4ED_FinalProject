@@ -7,7 +7,7 @@ query:
     applied_load: 20 N/mm
     element_length: 4000 mm
   max_r:
-    carbon: 10000
+    carbon: 10000 kg/mm
 
   optimize_for:
   - carbon
