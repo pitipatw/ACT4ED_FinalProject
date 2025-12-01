@@ -1,4 +1,4 @@
-mcdp {
+dp {
     provides moment_demand [N*mm]
     provides total_rebar_area [mm*mm]
     # provides section_width [mm]
