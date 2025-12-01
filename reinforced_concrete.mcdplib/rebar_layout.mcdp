@@ -1,6 +1,5 @@
 dp {
-    provides total_rebar_area [mm*mm]
-    # provides section_width [mm]
+    provides total_rebar_area [mm*mm]    
     provides moment_arm [mm]
     
     requires rebar_carbon [kg/mm]
