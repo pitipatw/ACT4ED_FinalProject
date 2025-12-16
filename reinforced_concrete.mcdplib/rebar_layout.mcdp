@@ -4,9 +4,6 @@ dp {
     
     requires rebar_carbon [kg/mm]
     
-    a = 2 [kg/mm/mm]
-    
-    provided total_rebar_area * a / moment_arm = required rebar_carbon
-
+    implemented-by yaml resource("rebar_layout_catalogues/rebar_layout_catalogue_1.yaml")
 }
 
