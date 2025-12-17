@@ -2,5 +2,7 @@
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 GLMakie = "e9467ef8-e4e7-5192-8a1a-b1aee30e663a"
+GeometryOps = "3251bfac-6a57-4b6d-aa61-ac1fef2975ab"
 Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
+Polyhedra = "67491407-f73d-577b-9b50-8179a7c68029"
 YAML = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"

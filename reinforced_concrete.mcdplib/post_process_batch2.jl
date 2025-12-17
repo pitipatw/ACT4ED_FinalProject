@@ -1,6 +1,7 @@
 
 using CSV, DataFrames
 using Makie, GLMakie
+using GeometryOps
 
 # load the .csv files
 concrete_section_catalog = CSV.read("reinforced_concrete.mcdplib/concrete_section_catalogues/concrete_section_catalogue_1.csv", DataFrame)
@@ -342,66 +343,96 @@ r4_opt_pair, r4_pes_pair = extract_r_opt_and_pes(r4_opt, r4_pes)
 
 
 
+
 f2_separated = Figure(size = (1000, 1000))
-ax_r1 = Axis(f2_separated[1, 1], title = "2.1",
+ax_r1 = Axis(f2_separated[1, 1], title = "Batch 2.1",
 xlabel = "applied_load [N/mm]",
-ylabel = "element_length [mm]" 
-# limits = (0, 25, 4000, 6000)
+ylabel = "element_length [mm]", 
+limits = (0, 75, 2000, 10000)
 )
 scatter!(ax_r1, [i[1][1] for i in r1_opt_pair], [i[1][2] for i in r1_opt_pair], color = :green)
 scatter!(ax_r1, [i[1][1] for i in r1_pes_pair], [i[1][2] for i in r1_pes_pair], color = :red)
 
-ax_r2 = Axis(f2_separated[1, 2], title = "2.2",
+r1_opt_coord = cat([i[1][1] for i in r1_opt_pair], [i[1][2] for i in r1_opt_pair], dims = 2)
+r1_pes_coord = cat([i[1][1] for i in r1_pes_pair], [i[1][2] for i in r1_pes_pair], dims = 2)
+
+
+function get_convex_hull_points(opt_pair, pes_pair)
+    opt_coord = cat([i[1][1] for i in opt_pair], [i[1][2] for i in opt_pair], dims = 2)
+    pes_coord = cat([i[1][1] for i in pes_pair], [i[1][2] for i in pes_pair], dims = 2)
+
+    all_coord = cat(opt_coord, pes_coord, dims = 1)
+    tup = [tuple(all_coord[i, 1], all_coord[i, 2]) for i in axes(all_coord, 1)]
+    points = GeometryOps.convex_hull(tup)
+    return points
+end
+points = get_convex_hull_points(r1_opt_pair, r1_pes_pair)
+
+poly!(ax_r1, points, color = "#3EA8DE")
+
+
+ax_r2 = Axis(f2_separated[1, 2], title = "Batch 2.2",
 xlabel = "applied_load [N/mm]",
-ylabel = "element_length [mm]" 
-# limits = (0, 25, 4000, 6000)
+ylabel = "element_length [mm]", 
+limits = (0, 75, 2000, 10000)
 )
 scatter!(ax_r2, [i[1][1] for i in r2_opt_pair], [i[1][2] for i in r2_opt_pair], color = :green)
 scatter!(ax_r2, [i[1][1] for i in r2_pes_pair], [i[1][2] for i in r2_pes_pair], color = :red)
 
-ax_r3 = Axis(f2_separated[2, 1], title = "2.3",
+points_r2 = get_convex_hull_points(r2_opt_pair, r2_pes_pair)
+poly!(ax_r2, points_r2, color = "#3EA8DE")
+
+ax_r3 = Axis(f2_separated[2, 1], title = "Batch 2.3",
 xlabel = "applied_load [N/mm]",
-ylabel = "element_length [mm]"
-# limits = (0, 25, 4000, 6000)
+ylabel = "element_length [mm]",
+limits = (0, 75, 2000, 10000)
 )
 scatter!(ax_r3, [i[1][1] for i in r3_opt_pair], [i[1][2] for i in r3_opt_pair], color = :green)
 scatter!(ax_r3, [i[1][1] for i in r3_pes_pair], [i[1][2] for i in r3_pes_pair], color = :red)
 
-ax_r4 = Axis(f2_separated[2, 2], title = "2.4",
+points_r3 = get_convex_hull_points(r3_opt_pair, r3_pes_pair)
+poly!(ax_r3, points_r3, color = "#3EA8DE")
+
+
+
+ax_r4 = Axis(f2_separated[2, 2], title = "Batch 2.4",
 xlabel = "applied_load [N/mm]",
-ylabel = "element_length [mm]" 
-# limits = (0, 25, 4000, 6000)
+ylabel = "element_length [mm]", 
+limits = (0, 75, 2000, 10000)
 )
 scatter!(ax_r4, [i[1][1] for i in r4_opt_pair], [i[1][2] for i in r4_opt_pair], color = :green)
 scatter!(ax_r4, [i[1][1] for i in r4_pes_pair], [i[1][2] for i in r4_pes_pair], color = :red)
+points_r4 = get_convex_hull_points(r4_opt_pair, r4_pes_pair)
+poly!(ax_r4, points_r4, color = "#3EA8DE")
 
-save("Result_2_separated.png" , f2_separated)
+
+save("Result_2_separated_15122025.png" , f2_separated)
 ##########
 
 f2_all = Figure(size = (500, 500))
-ax_all = Axis(f2_all[1, 1], title = "batch 2", 
+ax_all = Axis(f2_all[1, 1], title = "batch 2 all", 
 xlabel = "applied_load [N/mm]",
 ylabel = "element_length [mm]"
 # limits = (0, 25, 4000, 6000)
 )
-s1_opt = scatter!(ax_all, [i[1][1] for i in r1_opt_pair], [i[1][2] for i in r1_opt_pair], color = "#3EA8DE")
+# s1_opt = scatter!(ax_all, [i[1][1] for i in r1_opt_pair], [i[1][2] for i in r1_opt_pair], color = "#3EA8DE")
 s1_pes = scatter!(ax_all, [i[1][1] for i in r1_pes_pair], [i[1][2] for i in r1_pes_pair], color = "#3EA8DE")
 
-s2_opt = scatter!(ax_all, [i[1][1] for i in r2_opt_pair], [i[1][2] for i in r2_opt_pair], color = "#FF7BAC")
+# s2_opt = scatter!(ax_all, [i[1][1] for i in r2_opt_pair], [i[1][2] for i in r2_opt_pair], color = "#FF7BAC")
 s2_pes = scatter!(ax_all, [i[1][1] for i in r2_pes_pair], [i[1][2] for i in r2_pes_pair], color = "#FF7BAC")
 
-s3_opt = scatter!(ax_all, [i[1][1] for i in r3_opt_pair], [i[1][2] for i in r3_opt_pair], color = "#58bc81")
+# s3_opt = scatter!(ax_all, [i[1][1] for i in r3_opt_pair], [i[1][2] for i in r3_opt_pair], color = "#58bc81")
 s3_pes = scatter!(ax_all, [i[1][1] for i in r3_pes_pair], [i[1][2] for i in r3_pes_pair], color = "#58bc81")
 
-s4_opt = scatter!(ax_all, [i[1][1] for i in r4_opt_pair], [i[1][2] for i in r4_opt_pair], color = :black)
+# s4_opt = scatter!(ax_all, [i[1][1] for i in r4_opt_pair], [i[1][2] for i in r4_opt_pair], color = :black)
 s4_pes = scatter!(ax_all, [i[1][1] for i in r4_pes_pair], [i[1][2] for i in r4_pes_pair], color = :black)
 
 axislegend(
     ax_all, 
-    [s1_opt, s2_opt, s3_opt, s4_opt],
+    [s1_pes, s2_pes, s3_pes, s4_pes],
     ["Carbon = 50 kg/mm", "Carbon = 100 kg/mm", "Carbon = 150 kg/mm", "Carbon = 200 kg/mm"],
     halign = :right,
     valign = :top
 )
 
-save("Result_2_all.png" , f2_all)
+save("Result_2_all_15122025.png" , f2_all)
